@@ -1,0 +1,107 @@
+.hero {
+    padding-bottom: 52px;
+    padding-top: 63px;
+
+    background: #FFB8CA;
+    background-image: url(../img/milksbig.png), url(../../img/icecreamlaptop.png);
+    background-position: 180px, 790px;
+    background-repeat: no-repeat;
+    background-position-y: 321px, 0px;
+    background-size: 188px 191px, 236px 557px;
+
+    &__text {
+        color: #FFF;
+        font-family: "Titan One";
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.52px;
+        text-transform: uppercase;
+        width: 277px;
+        margin-bottom: 25px;
+    }
+
+    &__span {
+        color: #D41443;
+        font-family: "Titan One";
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 90.5%;
+        letter-spacing: 2.32px;
+        text-transform: uppercase;
+
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+    }
+
+    &__btn {
+        color: #FFF;
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        background-color: #D41443;
+
+        display: flex;
+        padding: 11px 24px;
+        border-radius: 40px;
+        border: none;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    &__button:last-child > .hero__btn {
+        color: #D41443;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-color: #FFF;
+
+        display: flex;
+        padding: 11px 20px;
+        border-radius: 40px;
+        border: none;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    &__wraps {
+        margin-top: 112px;
+        margin-left: 180px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__caption {
+        color: #FFF;
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; 
+        width: 200px;
+        height: 78px;
+
+        flex-shrink: 0;/* 19.6px */
+    }
+
+    &__img {
+        width: 26px;
+        height: 26px;
+        flex-shrink: 0;
+    }
+}
