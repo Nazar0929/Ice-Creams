@@ -25,19 +25,22 @@ h1, h2, h3, p, ul {
   margin-left: auto;
   padding: 0 115px;
 }
-@media screen and (min-width: 490px) {
+@media screen and (max-width: 767px) {
   .container {
-    width: 490px;
+    width: 100%;
+    padding: 0 20px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding: 0 34px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
+    padding: 0 115px;
   }
 }
 
@@ -99,11 +102,12 @@ body {
 @media screen and (min-width: 1280px) {
   .header > .container {
     padding-left: 46px;
-    padding-right: 97px;
+    padding-right: 115px;
   }
 }
 .header__images {
-  width: 100%;
+  width: 200px;
+  height: 50px;
 }
 .header__list {
   display: none;
@@ -218,7 +222,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .hero > .container {
-    padding: 0 77px;
+    padding: 0 80px;
   }
 }
 .hero__wrapper {
@@ -522,4 +526,235 @@ body {
     height: 232px;
     flex-shrink: 0;
   }
+}
+
+.products {
+  padding-top: 127px;
+}
+.products__text {
+  color: #FFA5BA;
+  text-align: center;
+  font-family: "Titan One";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .products__text {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__text {
+    font-size: 30px;
+  }
+}
+.products__caption {
+  color: #D41443;
+  text-align: center;
+  font-family: "Titan One";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.48px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .products__caption {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__caption {
+    font-size: 58px;
+  }
+}
+.products__list {
+  display: block;
+  justify-content: center;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .products__list {
+    gap: 20px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__list {
+    gap: 30px;
+  }
+}
+.products__item {
+  padding-bottom: 50px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #FFB8CA;
+  margin-top: 130px;
+  position: relative;
+  padding-top: 163px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .products__item {
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-bottom: 40px;
+    padding-top: 152px;
+    margin-top: 152px;
+    width: 220px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__item {
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 50px;
+    padding-top: 163px;
+    margin-top: 259px;
+    width: 330px;
+  }
+}
+.products__item:nth-child(2) {
+  background: #F0D1A5;
+}
+.products__item:nth-child(3) {
+  background: #C2E297;
+}
+.products__head {
+  color: #FFF;
+  text-align: center;
+  font-family: "Titan One";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .products__head {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__head {
+    font-size: 30px;
+  }
+}
+.products__head::before {
+  content: "";
+  width: 249px;
+  height: 252px;
+  flex-shrink: 0;
+  background-image: url(../../img/pinkmobile.png);
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(0%, -60%);
+  display: block;
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .products__head::before {
+    background-image: url(../../img/pinkstraw.png);
+    width: 220px;
+    height: 226px;
+    transform: translate(0%, -45%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__head::before {
+    width: 335px;
+    height: 335px;
+    background-image: url(../../img/icecreamstrawbbery.png);
+    transform: translate(0%, -60%);
+  }
+}
+.products .products__item:nth-child(2) .products__head::before {
+  background-image: url(../../img/yellow.png);
+}
+@media screen and (min-width: 768px) {
+  .products .products__item:nth-child(2) .products__head::before {
+    background-image: url(../../img/tabletyellow.png);
+    width: 220px;
+    height: 226px;
+    transform: translate(0%, -45%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products .products__item:nth-child(2) .products__head::before {
+    width: 335px;
+    height: 335px;
+    background-image: url(../../img/yellow.png);
+    transform: translate(0%, -60%);
+  }
+}
+.products .products__item:nth-child(3) .products__head::before {
+  background-image: url(../../img/greenchocolate.png);
+}
+@media screen and (min-width: 768px) {
+  .products .products__item:nth-child(3) .products__head::before {
+    background-image: url(../../img/greentablet.png);
+    width: 220px;
+    height: 226px;
+    transform: translate(0%, -45%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products .products__item:nth-child(3) .products__head::before {
+    width: 335px;
+    height: 335px;
+    background-image: url(../../img/greenchocolate.png);
+    transform: translate(0%, -60%);
+  }
+}
+.products__images {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+.products__wrap {
+  display: flex;
+  justify-content: center;
+}
+.products__desc {
+  width: 241px;
+  height: 106px;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 176%; /* 28.16px */
+  letter-spacing: 0.64px;
+  margin-top: 32px;
+}
+@media screen and (min-width: 768px) {
+  .products__desc {
+    font-size: 14px;
+    width: 198px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__desc {
+    font-size: 16px;
+    width: 241px;
+  }
+}
+.products__button {
+  background-color: transparent;
+  border: none;
+  margin-top: 62px;
+}
+.products__btn {
+  width: 40px;
+  height: 40px;
 }/*# sourceMappingURL=main.css.map */
