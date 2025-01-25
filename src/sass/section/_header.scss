@@ -4,15 +4,54 @@
 }
 
 .header {
-    padding-top: 37px;
-    padding-bottom: 21px;
+
+    padding-top: 6px;
+    padding-bottom: 21px; 
     background: #FFB8CA;
 
+    @media screen and (min-width: 768px) {
+        padding-bottom: 0px;
+        padding-top: 37px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        padding-bottom: 21px;
+      }
+
+
+    > .container {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @media screen and (min-width: 768px) {
+            padding-left: 34px;
+            padding-right: 34px;
+          }
+
+          @media screen and (min-width: 1280px) {
+            padding-left: 46px;
+            padding-right: 97px;
+          }
+    }
+
+
+    &__images {
+        width: 100%;
+    }
+
     &__list {
-        display: flex;
+        display: none;
         align-items: center;
         gap: 35px;
         margin-left: 110px;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 1280px) {
+            display: flex;
+        }
 
     }
 
@@ -25,8 +64,44 @@
         line-height: normal;
     }
 
+
+    &__butt {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        margin-left: auto;
+        transform: scale(1.2);
+
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            margin-left: 291px;
+          }
+
+          @media screen and (min-width: 1280px) {
+            display: none;
+          }
+    }
+
+    &__menu {
+        width: 20px;
+        height: 12px;
+
+    }
+
     &__wrap {
         margin-left: auto;
+        display: none;
+
+        
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+          }
+
+          @media screen and (min-width: 1280px) {
+            display: flex;
+          }
     }
 
     &__btn {

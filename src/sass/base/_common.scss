@@ -2,9 +2,21 @@
 body {
     font-family: "DM" sans-serif;
     color: var(--head-text);
+}
 
-    background-image: url(../../img/elipse.png);
-    background-position: top;
-    background-repeat: no-repeat;
 
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 62, 62);
+    // border-radius: 50px;
+}
+
+::selection {
+    background-color: gray;
+    color: white;
 }
