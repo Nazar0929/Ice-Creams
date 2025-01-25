@@ -10,8 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Titan+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <script type="module" crossorigin src="/project-name/assets/index-4d5db776.js"></script>
-    <link rel="stylesheet" href="/project-name/assets/index-9e554dd3.css">
+    <script type="module" crossorigin src="/project-name/assets/index-f502518d.js"></script>
+    <link rel="stylesheet" href="/project-name/assets/index-a84f6142.css">
   </head>
   <body>
 
@@ -65,7 +65,7 @@
 
     <section class="header">
     <div class="container header_box">
-    <a href=""><img src="../img/logoicecream.png" alt=""></a>
+    <a href=""><img src="../img/logoicecream.png" alt="" class="header__images"></a>
     <nav class="header__nav">
         <ul class="header__list">
             <li class="header__item">Home</li>
@@ -75,8 +75,11 @@
             <li class="header__item">Contact</li>
         </ul>
     </nav>
+    <button type="button" class="header__butt" data-modal-header-open>
+        <img src="../img/burgertime.png" alt="">
+      </button>
     <div class="header__wrap">
-    <button type="button" class="header__btn">Buy now img  ></button>
+    <button type="button" class="header__btn">Buy now ></button>
     </div>
     </div>
 </section>
@@ -84,6 +87,8 @@
 
     <section class="hero">
     <div class="container">
+        <div class="hero__wrapper">
+        <div class="hero__title">
         <h1 class="hero__text">ice cream
             made with
             <span class="hero__span">passion</span></h2>
@@ -91,10 +96,32 @@
                 <li class="hero__button"><button type="button" class="hero__btn">Products</button></li>
                 <li class="hero__button"><button type="button" class="hero__btn">How it’s made?</button></li>
             </ul>
+        </div>
+        <div>
+            <ul class="hero__listing">
+                <li class="hero__minitem">
+                    <p class="hero__number">16</p>
+                    <p class="hero__number">cafes</p>
+                </li>
+                <li class="hero__minitem">
+                    <p class="hero__number">23</p>
+                    <p class="hero__number">food trucks</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <div class="hero__down">
+            <div class="hero__boss">
+            <img src="../img/milksbig.png" alt="" class="hero__milk">
             <div class="hero__wraps">
             <p class="hero__caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
             <img src="../img/arrowrights.png" alt="" class="hero__img">
             </div>
+        </div>
+        <div>
+            <img src="../img/tasty.png" alt="" class="hero__tasty">
+        </div>
+    </div>
     </div>
 </section>
     
