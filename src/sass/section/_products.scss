@@ -70,6 +70,7 @@
         position: relative;
         padding-top: 163px;
         width: 100%;
+        
 
 
 
@@ -113,6 +114,7 @@
         letter-spacing: 1.2px;
         text-transform: uppercase;
 
+
         @media screen and (min-width: 768px) {
             font-size: 20px;
           }
@@ -129,19 +131,22 @@
         width: 249px;
         height: 252px;
         flex-shrink: 0;
-        background-image: url(../../img/pinkmobile.png);
+        background-image: url(../img/pinkmobile.png);
         top: 0;
         left: 0;
-        
         background-repeat: no-repeat;
-        background-position: center;
-        transform: translate(0%, -60%);
+        transform: translate(-50%, -50%);
+        left: 50%;
         display: block;
         position: absolute;
 
         @media screen and (min-width: 768px) {
-            background-image: url(../../img/pinkstraw.png);
+            background-image: url(../img/pinkstraw.png);
             width: 220px;
+            transform: translate(0%, -45%);
+            display: block;
+            top: 0;
+            left: 0;
             height: 226px;
             transform: translate(0%, -45%);
           }
@@ -149,7 +154,7 @@
           @media screen and (min-width: 1280px) {
             width: 335px;
             height: 335px;
-            background-image: url(../../img/icecreamstrawbbery.png);
+            background-image: url(../img/icecreamstrawbbery.png);
             transform: translate(0%, -60%);
           }
 
@@ -157,38 +162,54 @@
 
 
     .products__item:nth-child(2) .products__head::before {
-        background-image: url(../../img/yellow.png);
+        background-image: url(../img/yellowmobile.png);
+
+        transform: translate(-50%, -50%);
+        left: 50%;
+        display: block;
+        position: absolute;
 
         @media screen and (min-width: 768px) {
-            background-image: url(../../img/tabletyellow.png);
+            background-image: url(../img/tabletyellow.png);
             width: 220px;
             height: 226px;
+            transform: translate(0%, -45%);
+            display: block;
+            top: 0;
+            left: 0;
             transform: translate(0%, -45%);
           }
 
           @media screen and (min-width: 1280px) {
             width: 335px;
             height: 335px;
-            background-image: url(../../img/yellow.png);
+            background-image: url(../img/yellow.png);
             transform: translate(0%, -60%);
           }
     }
 
     .products__item:nth-child(3) .products__head::before {
-        background-image: url(../../img/greenchocolate.png);
-
+        background-image: url(../img/greenmobile.png);
+        transform: translate(-50%, -50%);
+        left: 50%;
+        display: block;
+        position: absolute;
         
         @media screen and (min-width: 768px) {
-            background-image: url(../../img/greentablet.png);
+            background-image: url(../img/greentablet.png);
             width: 220px;
             height: 226px;
+            transform: translate(0%, -45%);
+            display: block;
+            top: 0;
+            left: 0;
             transform: translate(0%, -45%);
           }
 
           @media screen and (min-width: 1280px) {
             width: 335px;
             height: 335px;
-            background-image: url(../../img/greenchocolate.png);
+            background-image: url(../img/greenchocolate.png);
             transform: translate(0%, -60%);
           }
     }
