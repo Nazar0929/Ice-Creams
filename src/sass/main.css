@@ -189,7 +189,7 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   background: #FFB8CA;
-  background-image: url(../../img/mobileice.png), url(../../img/circlepink.png);
+  background-image: url(../img/mobileice.png), url(../img/circlepink.png);
   background-position-x: calc(50% + 20px), calc(50% + 30px);
   background-repeat: no-repeat;
   background-position-y: 0px;
@@ -197,7 +197,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../../img/icesmall.png), url(../../img/circlepink.png);
+    background-image: url(../img/icesmall.png), url(../img/circlepink.png);
     background-size: 143px 336px, 324px 322px;
     background-position-x: calc(50% + 75px), calc(50% + 90px);
     padding-top: 14px;
@@ -206,7 +206,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .hero {
-    background-image: url(../../img/icecreamlaptop.png), url(../../img/elipse.png);
+    background-image: url(../img/icecreamlaptop.png), url(../img/elipse.png);
     background-size: 236px 557px, 538px 538px;
     background-position-x: calc(50% + 75px), calc(50% + 100px);
     padding-top: 63px;
@@ -334,19 +334,19 @@ body {
 }
 .hero__minitem {
   padding: 10px;
-  background-image: url(../../img/whiteelip.png);
+  background-image: url(../img/whiteelip.png);
   background-position: right top;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
   .hero__minitem {
-    background-image: url(../../img/ivanhorlo.png);
+    background-image: url(../img/ivanhorlo.png);
     padding: 5px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__minitem {
-    background-image: url(../../img/whiteelip.png);
+    background-image: url(../img/whiteelip.png);
     padding: 10px;
   }
 }
@@ -651,19 +651,23 @@ body {
   width: 249px;
   height: 252px;
   flex-shrink: 0;
-  background-image: url(../../img/pinkmobile.png);
+  background-image: url(../img/pinkmobile.png);
   top: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-position: center;
-  transform: translate(0%, -60%);
+  transform: translate(-50%, -50%);
+  left: 50%;
   display: block;
   position: absolute;
 }
 @media screen and (min-width: 768px) {
   .products__head::before {
-    background-image: url(../../img/pinkstraw.png);
+    background-image: url(../img/pinkstraw.png);
     width: 220px;
+    transform: translate(0%, -45%);
+    display: block;
+    top: 0;
+    left: 0;
     height: 226px;
     transform: translate(0%, -45%);
   }
@@ -672,18 +676,26 @@ body {
   .products__head::before {
     width: 335px;
     height: 335px;
-    background-image: url(../../img/icecreamstrawbbery.png);
+    background-image: url(../img/icecreamstrawbbery.png);
     transform: translate(0%, -60%);
   }
 }
 .products .products__item:nth-child(2) .products__head::before {
-  background-image: url(../../img/yellow.png);
+  background-image: url(../img/yellowmobile.png);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  display: block;
+  position: absolute;
 }
 @media screen and (min-width: 768px) {
   .products .products__item:nth-child(2) .products__head::before {
-    background-image: url(../../img/tabletyellow.png);
+    background-image: url(../img/tabletyellow.png);
     width: 220px;
     height: 226px;
+    transform: translate(0%, -45%);
+    display: block;
+    top: 0;
+    left: 0;
     transform: translate(0%, -45%);
   }
 }
@@ -691,18 +703,26 @@ body {
   .products .products__item:nth-child(2) .products__head::before {
     width: 335px;
     height: 335px;
-    background-image: url(../../img/yellow.png);
+    background-image: url(../img/yellow.png);
     transform: translate(0%, -60%);
   }
 }
 .products .products__item:nth-child(3) .products__head::before {
-  background-image: url(../../img/greenchocolate.png);
+  background-image: url(../img/greenmobile.png);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  display: block;
+  position: absolute;
 }
 @media screen and (min-width: 768px) {
   .products .products__item:nth-child(3) .products__head::before {
-    background-image: url(../../img/greentablet.png);
+    background-image: url(../img/greentablet.png);
     width: 220px;
     height: 226px;
+    transform: translate(0%, -45%);
+    display: block;
+    top: 0;
+    left: 0;
     transform: translate(0%, -45%);
   }
 }
@@ -710,7 +730,7 @@ body {
   .products .products__item:nth-child(3) .products__head::before {
     width: 335px;
     height: 335px;
-    background-image: url(../../img/greenchocolate.png);
+    background-image: url(../img/greenchocolate.png);
     transform: translate(0%, -60%);
   }
 }
