@@ -1,0 +1,105 @@
+.milk {
+    padding-top: 125px;
+    padding-bottom: 40px;
+    background: #FFF5F6;
+
+
+    background-image: url(../images/kolhoznilk.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+
+
+    &__title {
+        color: #FFA5BA;
+        text-align: center;
+        font-family: "Titan One";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+
+   &__subtitle {
+    color: #D41443;
+text-align: center;
+font-family: "Titan One";
+font-size: 58px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 3.48px;
+text-transform: uppercase;
+   } 
+
+
+   &__wrap {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 74px;
+   }
+
+   &__text {
+    color: #000;
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 176%; /* 28.16px */
+letter-spacing: 0.64px;
+width: 463px;
+margin-bottom: 35px;
+width: 463px;
+   }
+
+   &__subtext {
+    color: #907E82;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 194%; /* 27.16px */
+letter-spacing: 0.56px;
+width: 463px;
+
+   }
+
+&__kolhoz {
+    color: #907E82;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 194%; /* 27.16px */
+letter-spacing: 0.56px;
+width: 463px;
+margin-top: 30px;
+margin-bottom: 45px;
+}
+
+
+   &__btn {
+    color: #D41443;
+text-align: center;
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-left: 37px;
+padding-right: 25px;
+padding-top: 19px;
+padding-bottom: 17px;
+border-radius: 22px;
+background: #FFF;
+border: none;
+   }
+
+
+
+}
