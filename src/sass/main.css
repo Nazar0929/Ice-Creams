@@ -783,9 +783,22 @@ body {
   padding-top: 125px;
   padding-bottom: 40px;
   background: #FFF5F6;
-  background-image: url(../images/kolhoznilk.png);
+  background-image: url(../../img/sectionbg1.png);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center calc(100% - 250px);
+}
+@media screen and (min-width: 768px) {
+  .milk {
+    font-size: 26px;
+    background-image: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .milk {
+    background-image: url(../images/kolhoznilk.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 }
 .milk__title {
   color: #FFA5BA;
@@ -832,17 +845,14 @@ body {
   }
 }
 .milk__wrap {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+  display: block;
   gap: 46px;
 }
 @media screen and (min-width: 768px) {
   .milk__wrap {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 17px;
     flex-direction: row;
   }
@@ -850,7 +860,13 @@ body {
 @media screen and (min-width: 1280px) {
   .milk__wrap {
     gap: 74px;
+    margin-top: 55px;
+    align-items: center;
   }
+}
+.milk__wrapej {
+  display: flex;
+  justify-content: center;
 }
 .milk__img {
   width: 280px;
@@ -860,12 +876,36 @@ body {
   .milk__img {
     width: 340px;
     height: 339px;
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 1280px) {
   .milk__img {
     width: 516px;
     height: 516px;
+    margin-top: 0;
+  }
+}
+.milk__wrapper {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .milk__wrapper {
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .milk__wrapper {
+    margin-top: 0;
+  }
+}
+.milk__item {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .milk__item {
+    display: block;
   }
 }
 .milk__text {
@@ -877,7 +917,7 @@ body {
   line-height: 176%; /* 28.16px */
   letter-spacing: 0.64px;
   margin-bottom: 35px;
-  width: 220px;
+  width: 235px;
 }
 @media screen and (min-width: 768px) {
   .milk__text {
@@ -899,7 +939,7 @@ body {
   font-weight: 500;
   line-height: 194%; /* 27.16px */
   letter-spacing: 0.56px;
-  width: 220px;
+  width: 235px;
 }
 @media screen and (min-width: 768px) {
   .milk__subtext {
@@ -924,6 +964,7 @@ body {
   width: 463px;
   margin-top: 30px;
   margin-bottom: 45px;
+  width: 235px;
 }
 @media screen and (min-width: 768px) {
   .milk__kolhoz {
@@ -945,8 +986,8 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding-left: 37px;
-  padding-right: 25px;
+  padding-left: 46px;
+  padding-right: 34px;
   padding-top: 19px;
   padding-bottom: 17px;
   border-radius: 22px;

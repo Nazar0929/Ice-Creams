@@ -4,9 +4,25 @@
     background: #FFF5F6;
 
 
-    background-image: url(../images/kolhoznilk.png);
+    background-image: url(../../img/sectionbg1.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center calc(100% - 250px);
+
+
+    
+    @media screen and (min-width: 768px) {
+        font-size: 26px; 
+        background-image: none;
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        background-image: url(../images/kolhoznilk.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+    
+        
+    }
 
 
 
@@ -68,10 +84,7 @@ text-transform: uppercase;
 
 
    &__wrap {
-align-items: center;
-justify-content: center;
-display: flex;
-flex-direction: column;
+display: block;
 gap: 46px;
 
 
@@ -82,16 +95,24 @@ gap: 46px;
 
     display: flex;
 justify-content: center;
-align-items: center;
+align-items: flex-start;
     gap: 17px;
     flex-direction: row;
 }
 
 @media screen and (min-width: 1280px) {
 gap: 74px;
+margin-top: 55px;
+align-items: center;
+
     
 }
 
+   }
+
+   &__wrapej {
+    display: flex;
+    justify-content: center;
    }
 
 
@@ -102,16 +123,51 @@ gap: 74px;
 
 
 
+
     @media screen and (min-width: 768px) {
         width: 340px;
 height: 339px;
+margin-top: 50px;
     }
     
     @media screen and (min-width: 1280px) {
         width: 516px;
         height: 516px;
+
+        margin-top: 0;
         
     }
+   }
+
+
+   &__wrapper {
+    width: 100%;
+    
+
+
+    @media screen and (min-width: 768px) {
+    margin-top: 100px;
+    
+    }
+    
+    @media screen and (min-width: 1280px) {
+        margin-top: 0;
+    }
+
+   }
+
+   &__item {
+    display: flex;
+    justify-content: center;
+
+
+
+    
+    @media screen and (min-width: 768px) {
+display: block;
+    }
+    
+
    }
 
    &__text {
@@ -123,7 +179,7 @@ font-weight: 500;
 line-height: 176%; /* 28.16px */
 letter-spacing: 0.64px;
 margin-bottom: 35px;
-width: 220px;
+width: 235px;
 
 
 
@@ -154,7 +210,7 @@ font-style: normal;
 font-weight: 500;
 line-height: 194%; /* 27.16px */
 letter-spacing: 0.56px;
-width: 220px;
+width: 235px;
 
 
 
@@ -185,6 +241,7 @@ letter-spacing: 0.56px;
 width: 463px;
 margin-top: 30px;
 margin-bottom: 45px;
+width: 235px;
 
 
 
@@ -211,8 +268,8 @@ font-size: 16px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-padding-left: 37px;
-padding-right: 25px;
+padding-left: 46px;
+padding-right: 34px;
 padding-top: 19px;
 padding-bottom: 17px;
 border-radius: 22px;
