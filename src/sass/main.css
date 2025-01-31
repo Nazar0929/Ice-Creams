@@ -791,42 +791,105 @@ body {
   color: #FFA5BA;
   text-align: center;
   font-family: "Titan One";
-  font-size: 30px;
-  font-style: normal;
+  font-size: 18px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
+@media screen and (min-width: 768px) {
+  .milk__title {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .milk__title {
+    font-size: 30px;
+  }
+}
 .milk__subtitle {
   color: #D41443;
   text-align: center;
   font-family: "Titan One";
-  font-size: 58px;
+  font-size: 34px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 3.48px;
+  letter-spacing: 1.36px;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .milk__subtitle {
+    font-size: 48px;
+    letter-spacing: 1.92px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .milk__subtitle {
+    font-size: 58px;
+    letter-spacing: 3.48px;
+  }
+}
 .milk__wrap {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 74px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+@media screen and (min-width: 768px) {
+  .milk__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .milk__wrap {
+    gap: 74px;
+  }
+}
+.milk__img {
+  width: 280px;
+  height: 279px;
+}
+@media screen and (min-width: 768px) {
+  .milk__img {
+    width: 340px;
+    height: 339px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .milk__img {
+    width: 516px;
+    height: 516px;
+  }
 }
 .milk__text {
   color: #000;
   font-family: "DM Sans";
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 176%; /* 28.16px */
   letter-spacing: 0.64px;
-  width: 463px;
   margin-bottom: 35px;
-  width: 463px;
+  width: 220px;
+}
+@media screen and (min-width: 768px) {
+  .milk__text {
+    font-size: 14px;
+    width: 340px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .milk__text {
+    font-size: 16px;
+    width: 463px;
+  }
 }
 .milk__subtext {
   color: #907E82;
@@ -836,7 +899,19 @@ body {
   font-weight: 500;
   line-height: 194%; /* 27.16px */
   letter-spacing: 0.56px;
-  width: 463px;
+  width: 220px;
+}
+@media screen and (min-width: 768px) {
+  .milk__subtext {
+    font-size: 14px;
+    width: 340px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .milk__subtext {
+    font-size: 16px;
+    width: 463px;
+  }
 }
 .milk__kolhoz {
   color: #907E82;
@@ -849,6 +924,18 @@ body {
   width: 463px;
   margin-top: 30px;
   margin-bottom: 45px;
+}
+@media screen and (min-width: 768px) {
+  .milk__kolhoz {
+    font-size: 14px;
+    width: 340px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .milk__kolhoz {
+    font-size: 16px;
+    width: 463px;
+  }
 }
 .milk__btn {
   color: #D41443;
