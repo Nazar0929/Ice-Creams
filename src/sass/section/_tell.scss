@@ -1,0 +1,43 @@
+.tell{
+    padding-bottom: 80px;
+    background: linear-gradient(to bottom, #FFF5F6 24%, white 24%);
+
+
+
+
+    @media screen and (min-width: 768px) {
+        background: linear-gradient(to bottom, #FFF5F6 30.5%, white 30.5%);
+    }
+
+
+
+@media screen and (min-width: 1280px) {
+    background: linear-gradient(to bottom, #FFF5F6 33.5%, white 33.5%);
+    }
+
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img {
+        width: 320px;
+        height: 122px;
+
+        @media screen and (min-width: 768px) {
+            width: 786px;
+            height: 264px;  
+        }
+
+
+    
+ @media screen and (min-width: 1280px) {
+           width: 1280px;
+            height: 430px;  
+        }
+    }
+}
+
+
