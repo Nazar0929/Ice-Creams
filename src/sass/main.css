@@ -27,7 +27,7 @@ h1, h2, h3, p, ul {
 }
 @media screen and (max-width: 767px) {
   .container {
-    width: 100%;
+    width: 320px;
     padding: 0 20px;
   }
 }
@@ -993,4 +993,121 @@ body {
   border-radius: 22px;
   background: #FFF;
   border: none;
+}
+
+.weight {
+  padding-bottom: 97px;
+  background-color: #FFF5F6;
+}
+@media screen and (min-width: 768px) {
+  .weight {
+    padding-bottom: 140px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .weight {
+    padding-bottom: 140px;
+  }
+}
+.weight__list {
+  display: flex;
+  gap: 38px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .weight__list {
+    display: flex;
+    gap: 60px;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .weight__list {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+  }
+}
+.weight__title {
+  color: #D41443;
+  font-family: "Titan One";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.32px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .weight__title {
+    font-size: 48px;
+    letter-spacing: 1.92px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .weight__title {
+    font-size: 58px;
+    letter-spacing: 2.32px;
+    margin-bottom: 15px;
+  }
+}
+.weight__text {
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 176%; /* 28.16px */
+  letter-spacing: 0.32px;
+}
+@media screen and (min-width: 768px) {
+  .weight__text {
+    font-size: 14px;
+    width: 180px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .weight__text {
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    width: 330px;
+  }
+}
+
+.tell {
+  padding-bottom: 80px;
+  background: linear-gradient(to bottom, #FFF5F6 24%, white 24%);
+}
+@media screen and (min-width: 768px) {
+  .tell {
+    background: linear-gradient(to bottom, #FFF5F6 30.5%, white 30.5%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .tell {
+    background: linear-gradient(to bottom, #FFF5F6 33.5%, white 33.5%);
+  }
+}
+.tell__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tell__img {
+  width: 320px;
+  height: 122px;
+}
+@media screen and (min-width: 768px) {
+  .tell__img {
+    width: 786px;
+    height: 264px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .tell__img {
+    width: 1280px;
+    height: 430px;
+  }
 }/*# sourceMappingURL=main.css.map */

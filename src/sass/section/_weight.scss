@@ -1,0 +1,122 @@
+.weight {
+padding-bottom: 97px;
+background-color: #FFF5F6;
+
+
+
+
+@media screen and (min-width: 768px) {
+  
+
+padding-bottom: 140px;
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    padding-bottom: 140px;
+
+}
+
+
+&__list {
+
+    display: flex;
+    gap: 38px;
+    flex-direction: column;
+
+
+
+
+
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 60px;
+        flex-direction: row;
+   
+
+
+    }
+
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        gap: 30px;
+        flex-direction: row;
+   
+
+
+    }
+}
+
+
+&__title{
+    color: #D41443;
+    font-family: "Titan One";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.32px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 15px;
+
+
+
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        letter-spacing: 1.92px;
+
+
+    }
+
+
+    @media screen and (min-width: 1280px) {
+        font-size: 58px;
+        letter-spacing: 2.32px;
+        margin-bottom: 15px;
+
+
+    }
+    
+
+}
+
+&__text {
+    color: #000;
+font-family: "DM Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 176%; /* 28.16px */
+letter-spacing: 0.32px;
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    font-size: 14px;
+    width: 180px;
+
+
+}
+
+
+@media screen and (min-width: 1280px) {
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    width: 330px;
+  
+
+
+}
+
+
+}
+
+}
