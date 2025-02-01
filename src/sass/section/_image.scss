@@ -1,0 +1,123 @@
+.picture {
+
+    padding-bottom: 132px;
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        
+        @media screen and (min-width: 768px) {
+            margin-bottom: 15px;
+        }
+        
+        @media screen and (min-width: 1280px) {
+
+        }
+        
+
+    }
+
+    &__item {
+        margin-left: auto;
+        width: 280px;
+        height: 308px;
+        margin-right: auto;
+        padding-top: 43px;
+        padding-left: 57px;
+        padding-right: 66px;
+        padding-bottom: 26px;
+        background-color: #ecececbf;
+        border-radius: 10px;
+
+        background-image: url(../../img/scobka.png);
+        background-position: 50px 32px;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+
+
+        @media screen and (min-width: 768px) {
+            width: 620px;
+            height: 164px;
+            flex-shrink: 0;
+            padding-top: 47px;
+            padding-left: 80px;
+            padding-right: 80px;
+            margin-bottom: 15px;
+            padding-bottom: 34px;
+
+        }
+        
+        @media screen and (min-width: 1280px) {
+
+            width: 926px;
+            margin-right: auto;
+            padding-top: 47px;
+            padding-left: 87px;
+            padding-right: 89px;
+            padding-bottom: 39px;
+            height: 138px;
+            
+        }
+
+    }
+
+    &__text {
+
+        color: #000;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 16px;font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 255%; /* 30.6px */        
+        letter-spacing: 0.64px;
+        width: 157px;
+        height: 239px;
+
+
+        @media screen and (min-width: 768px) {
+            width: 460px;
+            letter-spacing: 0.56px;
+            line-height: 216%; /* 30.24px */
+            font-size: 14px;
+
+
+        }
+        
+        @media screen and (min-width: 1280px) {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 186%; /* 29.76px */
+            letter-spacing: 0.64px;
+            width: 750px;
+            height: 52px;
+        }
+
+    }
+
+
+
+    &__img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+
+        
+    }
+
+    &__caption {
+        text-align: center;
+        color: #000;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 186%; /* 37.2px */
+        margin-bottom: 35px;
+
+    }
+}
