@@ -1213,4 +1213,447 @@ body {
   font-weight: 500;
   line-height: 186%; /* 37.2px */
   margin-bottom: 35px;
+}
+
+.city {
+  background: #fff5f6;
+  padding-top: 132px;
+  padding-bottom: 86px;
+}
+.city__list {
+  display: block;
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .city__list {
+    gap: 20px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .city__list {
+    gap: 29px;
+  }
+}
+.city__item:nth-child(3) {
+  margin-bottom: 0;
+}
+.city__item {
+  width: 100%;
+  height: 427px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  justify-content: center;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  padding-left: 20px;
+  padding-right: 21px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .city__item {
+    height: 544px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 31px;
+    padding-right: 32px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .city__item {
+    width: 330px;
+    height: 572px;
+    padding-top: 51px;
+    padding-bottom: 62px;
+    padding-right: 44px;
+    padding-left: 43px;
+    margin-bottom: 0;
+  }
+}
+.city__title {
+  color: #fff;
+  background: #f0d1a5;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+  /* 22.32px */
+  letter-spacing: 0.48px;
+  width: 80px;
+  height: 16px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .city__title {
+    width: 73px;
+    height: 28px;
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .city__title {
+    width: 73px;
+    height: 28px;
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
+}
+.city__titles {
+  color: #fff;
+  background: #c2e297;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+  /* 22.32px */
+  letter-spacing: 0.48px;
+  width: 130px;
+  height: 16px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .city__titles {
+    width: 138px;
+    height: 28px;
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .city__titles {
+    width: 138px;
+    height: 28px;
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
+}
+.city__sity {
+  width: 57.006px;
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 186%;
+  /* 22.32px */
+  letter-spacing: 0.48px;
+}
+@media screen and (min-width: 768px) {
+  .city__sity {
+    font-size: 14px;
+    letter-spacing: 0.56px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .city__sity {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
+}
+.city__sitys {
+  width: 89px;
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 186%;
+  /* 22.32px */
+  letter-spacing: 0.48px;
+}
+@media screen and (min-width: 768px) {
+  .city__sitys {
+    font-size: 14px;
+    letter-spacing: 0.56px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .city__sitys {
+    font-size: 14px;
+  }
+}
+.city__text {
+  width: 179px;
+  height: 36px;
+  color: #907e82;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .city__text {
+    width: 145px;
+    height: 65px;
+    font-size: 14px;
+    line-height: 166%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .city__text {
+    width: 243px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 183%;
+    letter-spacing: 0.64px;
+    margin-bottom: 32px;
+  }
+}
+.city__dayz {
+  color: black;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 186%;
+  margin-top: 25px;
+}
+@media screen and (min-width: 768px) {
+  .city__dayz {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .city__dayz {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    margin-top: 32px;
+  }
+}
+.city__timez {
+  width: 161.898px;
+  height: 23px;
+  color: #ffa5ba;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+  /* 22.32px */
+}
+@media screen and (min-width: 768px) {
+  .city__timez {
+    width: 161.898px;
+    height: 23px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .city__timez {
+    font-size: 16px;
+  }
+}
+.city__dayz {
+  color: black;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 186%;
+  margin-top: 25px;
+}
+@media screen and (min-width: 768px) {
+  .city__dayz {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .city__dayz {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    margin-top: 32px;
+  }
+}
+.city__timez {
+  width: 161.898px;
+  height: 23px;
+  color: #ffa5ba;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+  margin-bottom: 10px;
+  /* 22.32px */
+}
+@media screen and (min-width: 768px) {
+  .city__timez {
+    width: 161.898px;
+    height: 23px;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .city__timez {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+}
+.city__days {
+  color: black;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 186%;
+}
+@media screen and (min-width: 768px) {
+  .city__days {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .city__days {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
+}
+.city__times {
+  width: 161.898px;
+  height: 23px;
+  color: #ffa5ba;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+  margin-bottom: 25px;
+  /* 22.32px */
+}
+@media screen and (min-width: 768px) {
+  .city__times {
+    width: 161.898px;
+    height: 23px;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .city__times {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+}
+.city__contacts {
+  width: 179px;
+  height: 37px;
+  color: #907e82;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: 25px;
+  /* 150% */
+}
+@media screen and (min-width: 768px) {
+  .city__contacts {
+    width: 157px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 183%;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .city__contacts {
+    width: 243px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 183%;
+    margin-top: 32px;
+    /* 29.28px */
+  }
+}
+.city__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 54px;
+}
+@media screen and (min-width: 768px) {
+  .city__buttons {
+    margin-top: 81px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .city__buttons {
+    margin-top: 86px;
+  }
+}
+.city__btnlist {
+  flex-direction: column;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .city__btnlist {
+    flex-direction: row;
+    display: flex;
+    gap: 14.5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .city__btnlist {
+    flex-direction: row;
+    display: flex;
+    gap: 15px;
+  }
+}
+.city__button {
+  width: 161.45px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  background: #d41342;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.city__btnlink {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.city__btns {
+  width: 161px;
+  height: 44px;
+  border-radius: 22px;
+  background: #FFF;
+}
+.city__btnlinks {
+  width: 80.254px;
+  height: 44px;
+  color: #D41443;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 75px;
 }/*# sourceMappingURL=main.css.map */
