@@ -4,6 +4,7 @@
 }
 
 .header {
+  position: relative;
 
     padding-top: 6px;
     padding-bottom: 21px; 
@@ -67,7 +68,7 @@
     }
 
 
-    &__butt {
+    &__button {
         border: none;
         background-color: transparent;
         cursor: pointer;
@@ -91,7 +92,7 @@
 
     }
 
-    &__wrap {
+    &__wraps {
         margin-left: auto;
         display: none;
 
@@ -106,7 +107,7 @@
           }
     }
 
-    &__btn {
+    &__btns {
         color: #D41443;
         text-align: center;
         font-family: "DM Sans";
@@ -121,4 +122,289 @@
         background: #FFF;
         border: none;
     }
+
+    &__buttons {
+      width: 80.717px;
+      height: 44px;
+      width: 186px;
+      height: 44px;
+      flex-shrink: 0;
+      border-radius: 22px;
+      background: #FFF;
+      border: none;
+      color: #D41443;
+      text-align: center;
+      font-family: "DM Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    &__lists {
+      margin-top: 19px;
+    }
+    
+    &__boxes {
+      padding-top: 11px;
+      padding-bottom: 13px;
+      border-top: 2px solid #E18298;
+    }
+
+    &__boxes:last-child {
+      border-bottom: 2px solid #E18298;
+    }
+
+    &__link{
+      color: #D41443;
+      font-family: "DM Sans";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    &__link {
+      color: #FFF;
+      font-family: "DM Sans";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header__button {
+  border: none;
+
+  
+
+  @media screen and (min-width:1280px) {
+    display: none;
+  }
+}
+.header__menu {
+  width: 40px;
+    height: 60px;
+
+
+}
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 254px;
+  height: 1020px;
+
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+  padding-left: 24px;
+  padding-right: 34px;
+  padding-top: 60px;
+  opacity: 1;
+
+  z-index: 2;
+  background: #E17992;
+
+  transition: 0.4s ease;
+
+  
+
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+
+}
+
+
+.menu.is-hidden {
+  
+}
+
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+
+}
+
+
+.menu__btn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 23px;
+  right: 34px;
+}
+
+.menu__close {
+  width: 40px;
+  height: 40px;
+
+
+}
+.menu__btn:hover {
+  .menu__close {
+
+  }
+
+
+
+
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.menu__link {
+  color: #FFF;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    line-height: 1.17;
+}
+.menu__link:hover {
+
+}
+
+.ssw {
+  position: absolute;
+  bottom: 50px;
+  
+}
+
+.menu__list-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: linear-gradient(92deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+margin-bottom: 64px;
+}
+.menu__link-contact {
+  
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: 0.48px;
+    
+}
+.menu__item-contact:first-child > 
+.menu__link-contact {
+
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.68px;
+}
+
+.menu__item-contact:last-child > .menu__link-contact {
+
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+}
+
+
+.menu__list-social {
+  display: flex;
+
+}
+
+.menu__link-social {
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: .36px;
+}
+
+
+.menu__item-social:not(:last-child) {
+  margin-right: 10px;
+  display: flex;
+}
+
+
+.menu__item-social:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 22px;
+
+  margin-left: 10px;
+}
+
+
+    .header__buto {
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      padding: 13px 20px;
+      border-radius: 40px;
+      border: 2px solid #FFF;
+      background-color: transparent;
+      transition: transform 0.4s ease;
+
+      &:hover,
+      &:focus {
+          transform: scale(1.1);
+      }
+  }
+
+  .header__bur {
+      color: #343045;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      padding: 13px 20px;
+      line-height: normal;
+      border-radius: 40px;
+      transition: transform 0.4s ease;
+      background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+
+      &:hover,
+      &:focus {
+          transform: scale(1.1);
+      }
+  }
