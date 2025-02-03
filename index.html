@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/Ice-Creams/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Ice-Creams/assets/index-3e917d30.css">
+    <link rel="stylesheet" href="/Ice-Creams/assets/index-3308375e.css">
   </head>
   <body>
 
@@ -79,14 +79,14 @@
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAApSURBVHgB7dFBEQAACAIwMIOJTGZHC1nCB3eyCuNkNQ4FTA69/ID+8gKqGQUFTB963AAAAABJRU5ErkJggg==" alt="">
       </button>
           <div class="header__wraps">
-            <button type="button" class="header__btns">Buy now ></button>
+            <button type="button" class="header__btns" data-modal-open>Buy now ></button>
         </div>
         
       <div class="menu is-hidden" data-header-modal>
-        <button type="button" class="menu__btn" data-modal-header-close>
+        <button type="button" class="menu__btn" data-modal-header-close >
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACQSURBVHgBpZOBDYAgDAQbJ3CEjuAIbIKbyIaMwAi6ARZTk6qAbWjSpGn/vpAAAEXOGWEkyCBSbgY9MoOykTQmQhtaA2+GNSZitoLyiF70FhX8AnZKJ2odXNla0rV0U8djFvUBxu2ej73wNa7aAicJlPtzD7UwVmZ9k/IK/7Y0TTSw0IaH9vMxFMEmEUbiXngC068H2oGdjQAAAAAASUVORK5CYII=" alt="" class="header__logobur">
         </button>
-        <button type="button" class="header__buttons">Buy now ></button>
+        <button type="button" class="header__buttons" data-modal-open>Buy now ></button>
         <ul class="header__lists">
             <li class="header__boxes"><a href="" class="header__link">Home</a></li>
             <li class="header__boxes"><a href="" class="header__link">About us</a></li>
@@ -394,6 +394,71 @@
         </div>
     </div>
 </footer>
+    
+    <div class="backdrop is-hidden"  data-modal>
+        <div class="backdrop__modal ">
+            <h2 class="backdrop__text">Your order</h2>
+            <ul class="backdrop__list">
+                <li class="backdrop__item">
+                    <img src="../img/pinkstraw.png" alt="" class="backdrop__picture">
+                    <div>
+                    <p class="backdrop__caption">Vanilla strawberry ice cream</p>
+                    <p class="backdrop__price">$4.25</p>
+                    <div class="backdrop__wrap">
+                        <p class="backdrop__label">Quantity:</p>
+                        <input type="text" class="backdrop__input">
+                    </div>
+                    </div>
+                </li>
+                <li class="backdrop__item">
+                    <img src="../img/yellow.png" alt="" class="backdrop__picture">
+                    <div>
+                    <p class="backdrop__caption">Columbia ice coffee</p>
+                    <p class="backdrop__price">$4.25</p>
+                    <div class="backdrop__wrap">
+                        <p class="backdrop__label">Quantity:</p>
+                        <input type="text" class="backdrop__input">
+                    </div>
+                    </div>
+                </li>
+                <li class="backdrop__item">
+                    <img src="../img/greentablet.png" alt="" class="backdrop__picture">
+                    <div>
+                    <p class="backdrop__caption">Сhocolate milkshakes</p>
+                    <p class="backdrop__price">$4.25</p>
+                    <div class="backdrop__wrap">
+                        <p class="backdrop__label">Quantity:</p>
+                        <input type="text" class="backdrop__input">
+                    </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="backdrop__listing">
+                <li class="backdrop__box">
+                    <p class="backdrop__texting">Amount:</p>
+                    <input type="text" class="backdrop__result">
+                </li>
+                <li class="backdrop__box">
+                    <p class="backdrop__texting">Total:</p>
+                    <input type="text" class="backdrop__result">
+                </li>
+            </ul>
+            <ul class="backdrop__wrapers">
+                <li>
+                    <button type="button" class="backdrop__buttons" >Calculate</button>
+                </li>
+                <li>
+                    <button type="button" class="backdrop__buttons" >Next  ></button>
+                </li>
+            </ul>
+            <button type="button" class="backdrop__closee" data-modal-close>
+            <img src="../img/closes.png" alt="" class="backdrop__imgss">
+          </button>
+        </div>
+      </div>
+
+      
+
 
 
     
