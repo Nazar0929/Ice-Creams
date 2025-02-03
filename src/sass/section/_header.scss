@@ -121,6 +121,7 @@
         border-radius: 22px;
         background: #FFF;
         border: none;
+        cursor: pointer;
     }
 
     &__buttons {
@@ -139,6 +140,7 @@
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+      cursor: pointer;
     }
 
     &__lists {
@@ -218,7 +220,7 @@
 
 }
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 254px;
