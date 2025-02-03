@@ -32,3 +32,30 @@
     }
   })();
   
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const calculateBtn = document.querySelector(".backdrop__buttons"); // Кнопка "Calculate"
+    const quantityInputs = document.querySelectorAll(".backdrop__input"); // Все инпуты с количеством
+    const amountInput = document.querySelectorAll(".backdrop__result")[0]; // Поле "Amount"
+    const totalInput = document.querySelectorAll(".backdrop__result")[1]; // Поле "Total"
+
+    calculateBtn.addEventListener("click", () => {
+        let totalQuantity = 0;
+        let totalPrice = 0;
+        const pricePerUnit = 4.25; // Цена за 1 мороженое
+
+        quantityInputs.forEach(input => {
+            const quantity = parseInt(input.value) || 0; // Берём количество
+            totalQuantity += quantity;
+            totalPrice += quantity * pricePerUnit;
+        });
+
+        amountInput.value = totalQuantity; // Выводим количество
+        totalInput.value = `$${totalPrice.toFixed(2)}`; // Выводим сумму в Total
+    });
+});
+
+
