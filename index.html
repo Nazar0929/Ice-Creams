@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/Ice-Creams/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Ice-Creams/assets/index-3308375e.css">
+    <link rel="stylesheet" href="/Ice-Creams/assets/index-ecd857af.css">
   </head>
   <body>
 
@@ -395,7 +395,7 @@
     </div>
 </footer>
     
-    <div class="backdrop is-hidden"  data-modal>
+    <div class="backdrop is-hidden"  data-modal-first>
         <div class="backdrop__modal ">
             <h2 class="backdrop__text">Your order</h2>
             <ul class="backdrop__list">
@@ -448,7 +448,7 @@
                     <button type="button" class="backdrop__buttons" >Calculate</button>
                 </li>
                 <li>
-                    <button type="button" class="backdrop__buttons" >Next  ></button>
+                    <button type="button" class="backdrop__buttons" data-modal-open-second >Next  ></button>
                 </li>
             </ul>
             <button type="button" class="backdrop__closee" data-modal-close>
@@ -459,8 +459,45 @@
 
       
 
+    
+<div class="backdrop is-hidden"  data-modal-second>
+    <div class="backdrop__modals ">
+        <form>
+            <p class="backdrop__p">Please fill out the form so that we can contact you to place an order</p>
+            <label for="" class="backdrop__labelina">
+                <span class="backdrop__s">Name</span>
+                <input type="text" placeholder="Jhon Smith" class="backdrop__pasha" required>
+            </label>
+            <label for="" class="backdrop__labelina">
+                <span class="backdrop__s">Phone number</span>
+                <input type="number" placeholder="+61 (0) 383 766 284" class="backdrop__pasha" required>
+            </label>
+            <label for="" class="backdrop__labelina">
+                <span class="backdrop__s">E-mail</span>
+                <input type="email" placeholder="E-mail" class="backdrop__pasha" required>
+            </label>
+            <label for="" class="backdrop__labelina">
+                <span class="backdrop__s">Comments</span>
+                <input type="text" placeholder="Input your commnets" class="backdrop__pashas" required>
+            </label>
+            <label class="backdrop__checkbox"> 
+                <input class="backdrop__labelss" type="checkbox" name="policy" value="reading"> 
+                <span class="backdrop__icons"></span> 
+                <span class="backdrop__texst">Вам исполнилось 16 лет?</span> 
+                <a class="backdrop__links" href="">Contract terms</a> </label>
+                <button type="submit" class="backdrop__buttondss"  >Send</button>
+        </form>
+        <button type="button" class="backdrop__closee" data-modal-close-second>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACQSURBVHgBpZOBDYAgDAQbJ3CEjuAIbIKbyIaMwAi6ARZTk6qAbWjSpGn/vpAAAEXOGWEkyCBSbgY9MoOykTQmQhtaA2+GNSZitoLyiF70FhX8AnZKJ2odXNla0rV0U8djFvUBxu2ej73wNa7aAicJlPtzD7UwVmZ9k/IK/7Y0TTSw0IaH9vMxFMEmEUbiXngC068H2oGdjQAAAAAASUVORK5CYII=" alt="" class="backdrop__imgss">
+      </button>
+    </div>
+  </div>
+
+  
+  
 
 
     
+    <script type="modul" src="/modal.js"></script>
   </body>
 </html>
