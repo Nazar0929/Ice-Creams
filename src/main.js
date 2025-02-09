@@ -16,6 +16,12 @@
 
 
 
+
+
+
+
+
+
   (() => {
     const refs = {
         openFirstModalBtns: document.querySelectorAll("[data-modal-open]"), // Кнопки открытия первой модалки
@@ -25,12 +31,15 @@
         openSecondModalBtn: document.querySelector("[data-modal-open-second]"), // Кнопка "Next"
         closeSecondModalBtn: document.querySelector("[data-modal-close-second]"),
         secondModal: document.querySelector("[data-modal-second]"),
+
+        openThirdModalBtn: document.querySelector("[data-modal-open-third]"), // Кнопка "Send" во втором окне
+        closeThirdModalBtn: document.querySelector("[data-modal-close-third]"),
+        thirdModal: document.querySelector("[data-modal-third]"),
     };
 
     // Открытие и закрытие первой модалки
     refs.openFirstModalBtns.forEach(btn => btn.addEventListener("click", toggleFirstModal));
     refs.closeFirstModalBtn.addEventListener("click", toggleFirstModal);
-    // Закрытие по клику на фон
     refs.firstModal.addEventListener("click", (event) => {
         if (event.target.classList.contains("backdrop")) toggleFirstModal();
     });
@@ -48,7 +57,6 @@
 
     // Закрытие второй модалки
     refs.closeSecondModalBtn.addEventListener("click", toggleSecondModal);
-    // Закрытие по клику на фон
     refs.secondModal.addEventListener("click", (event) => {
         if (event.target.classList.contains("backdrop")) toggleSecondModal();
     });
@@ -57,7 +65,46 @@
         refs.secondModal.classList.add("is-hidden");
         document.body.classList.remove("no-scroll");
     }
+
+    // Открытие третьей модалки с нужной задержкой и закрытием вторго окна перед первым
+    refs.openThirdModalBtn.addEventListener("click", () => {
+        // Закрытие второго окна сразу
+        refs.secondModal.classList.add("is-hidden");
+
+        // Первое окно начинает закрываться с задержкой
+        setTimeout(() => {
+            refs.firstModal.classList.add("is-hidden");
+        }, 500); // Задержка на закрытие первого окна (500ms)
+
+        // Открытие третьего окна с большой задержкой
+        setTimeout(() => {
+            refs.thirdModal.classList.remove("is-hidden");
+            document.body.classList.add("no-scroll");
+        }, 1500); // Задержка на открытие третьего окна (1500ms)
+    });
+
+    // Закрытие третьей модалки
+    refs.closeThirdModalBtn.addEventListener("click", toggleThirdModal);
+    refs.thirdModal.addEventListener("click", (event) => {
+        if (event.target.classList.contains("backdrop")) toggleThirdModal();
+    });
+
+    function toggleThirdModal() {
+        refs.thirdModal.classList.add("is-hidden");
+        document.body.classList.remove("no-scroll");
+    }
 })();
+
+
+
+
+
+
+
+
+
+
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -81,5 +128,8 @@ document.addEventListener("DOMContentLoaded", () => {
         totalInput.value = `$${totalPrice.toFixed(2)}`; // Выводим сумму в Total
     });
 });
+
+
+
 
 
