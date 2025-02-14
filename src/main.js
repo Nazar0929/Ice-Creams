@@ -133,3 +133,124 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const modalKrem = document.querySelector("[data-modal-krem]");
+    const modalFirst = document.querySelector("[data-modal-first]");
+    
+    document.addEventListener("click", (e) => {
+        // Открытие первого модального окна
+        if (e.target.closest("[data-modal-krem-open]")) {
+            modalKrem.classList.remove("is-hidden");
+        }
+        // Закрытие первого модального окна
+        if (e.target.closest("[data-modal-krem-close]") || e.target === modalKrem) {
+            modalKrem.classList.add("is-hidden");
+        }
+
+        // Открытие второго модального окна и закрытие первого
+        if (e.target.closest("[data-modal-open]")) {
+            modalKrem.classList.add("is-hidden");
+            modalFirst.classList.remove("is-hidden");
+        }
+
+        // Закрытие второго модального окна
+        if (e.target.closest("[data-modal-close]") || e.target === modalFirst) {
+            modalFirst.classList.add("is-hidden");
+        }
+    });
+
+    // Закрытие модальных окон по нажатию Escape
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            modalKrem.classList.add("is-hidden");
+            modalFirst.classList.add("is-hidden");
+        }
+    });
+});
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const openModalBtn = document.querySelector("[data-modal-milk-open]");
+    const closeModalBtn = document.querySelector("[data-modal-milk-close]");
+    const modalMilk = document.querySelector("[data-modal-milk]");
+
+    if (openModalBtn && closeModalBtn && modalMilk) {
+        openModalBtn.addEventListener("click", () => {
+            modalMilk.classList.remove("is-hidden");
+        });
+
+        closeModalBtn.addEventListener("click", () => {
+            modalMilk.classList.add("is-hidden");
+        });
+
+        modalMilk.addEventListener("click", (event) => {
+            if (event.target === modalMilk) {
+                modalMilk.classList.add("is-hidden");
+            }
+        });
+    }
+});
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const openModalBtn = document.querySelector("[data-modal-map-open]");
+    const closeModalBtn = document.querySelector("[data-modal-map-close]");
+    const modalMilk = document.querySelector("[data-modal-map]");
+
+    if (openModalBtn && closeModalBtn && modalMilk) {
+        openModalBtn.addEventListener("click", () => {
+            modalMilk.classList.remove("is-hidden");
+        });
+
+        closeModalBtn.addEventListener("click", () => {
+            modalMilk.classList.add("is-hidden");
+        });
+
+        modalMilk.addEventListener("click", (event) => {
+            if (event.target === modalMilk) {
+                modalMilk.classList.add("is-hidden");
+            }
+        });
+    }
+});
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const openModalBtn = document.querySelector("[data-modal-formss-open]");
+    const closeModalBtn = document.querySelector("[data-modal-formss-close]");
+    const modalMilk = document.querySelector("[data-modal-formss]");
+
+    if (openModalBtn && closeModalBtn && modalMilk) {
+        openModalBtn.addEventListener("click", () => {
+            modalMilk.classList.remove("is-hidden");
+        });
+
+        closeModalBtn.addEventListener("click", () => {
+            modalMilk.classList.add("is-hidden");
+        });
+
+        modalMilk.addEventListener("click", (event) => {
+            if (event.target === modalMilk) {
+                modalMilk.classList.add("is-hidden");
+            }
+        });
+    }
+});
+
+
+

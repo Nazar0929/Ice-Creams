@@ -401,6 +401,8 @@
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            border: none;
+            background-color: transparent;
             
     }
     &__btns {
@@ -424,5 +426,7 @@
           justify-content: center;
           text-align: center;
           padding-left: 75px;
+          border: none;
+          background-color: transparent;
     }
   }

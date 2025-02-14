@@ -7,6 +7,7 @@
     background-image: url(../../img/sectionbg1.png);
     background-repeat: no-repeat;
     background-position: center calc(100% - 250px);
+    background-size: 100%;
 
 
     
@@ -20,7 +21,7 @@
         background-image: url(../images/kolhoznilk.png);
         background-repeat: no-repeat;
         background-position: bottom;
-        
+        background-position: center calc(100% + 50px); // Сдвиг ниже
 
     
         
