@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/Ice-Creams/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Ice-Creams/assets/index-fc649b03.css">
+    <link rel="stylesheet" href="/Ice-Creams/assets/index-3e0946c4.css">
   </head>
   <body>
 
@@ -63,7 +63,7 @@
   </div>
 </section> -->
 
-    <header class="header">
+    <header class="header" id="buttonss">
     <div class="container header_box">
     <a href=""><img src="/Ice-Creams/assets/logoicecream-4e0ce442.png" alt="" class="header__images"></a>
     <nav class="header__nav">
@@ -95,7 +95,11 @@
             <li class="header__boxes"><a href="" class="header__link">Contact</a></li>
         </ul>
     </div>
+
+
     </div>
+    <a href="#buttonss" id="buttons" class="show">⇧</a>
+
 </header>
 
 
@@ -241,17 +245,49 @@
     <section class="picture">
     <h2 hidden>kmfvkrm</h2>
     <div class="container">
-        <div class="picture__wrap">
-        <img src="/Ice-Creams/assets/womantell-05dcff76.png" alt="">
-       </div>
-       <div class="picture__item">
-        <p class="picture__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
-       </div>
-       <ul class="picture__list">
-        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAECAYAAADvRz3UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABeSURBVHgBrYxBDYBQDEO7KSDBAC64YQUNOAAHWMAKN1xggOQbgNJMwQ7rYVnTvGdXP80vsBvQHFjH5zyQSBXnn45Kp22gBiRTxTkZJaK/ZUVVnJtxAXGHxLhlRVXcD2I5Qm/4ue6wAAAAAElFTkSuQmCC" alt="" class="picture__img"></li>
-        <li><p class="picture__caption">Emily, Los Angeles</p></li>
-        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAAAMCAYAAAAu5pADAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqSURBVHgB5ZZRTsJAEIZnt5rwwEOjF2ifCIkhcAJLvICeQDkBegRvoCewR9ALYD1BiZoQntwDqOGJF+2OM0hJkQZ3k6198Es2gcls/8m/2+kIKCH1o2DXk/cg4PbgdXQBFZOmqd9sNoeIGPFahsda6+t2ux1DRZjqio2NS4MQIPiOYPKZ4UlvlsygAiaTSSAlHchKbwNFRfepaAU16a6ZRAZ1d7zFRr8YpyT1kek+GaXAMdPp9GVLoTlqPp/3CGcHZaMr83/P+9FpmUEM3yq+XXzLwCF0mmfwe6FM0Gg0zsERtroLk572oiGCjKHEoBw2ikyktziKwBF03YemuZ7nHYIjbHXl4/7RMQh5ZbjH96S4AXd0TRMLjfXPdWWWZQmCHnDfMdiSZBr78M+Q/NXqvCXxWhRxjAgxL3rP1pqly+YthEgs0sfgCFtdWRbVIO4676MBL3qis+J+Qrf4wTSXZxdwhK2uhBqhLwf3QmWQqlwOlba6tZoUhuGMBzbYXrBa5tSmuzKJunih9+jCb6xk0s7hibbVaoVU0AAKfYf7BsUueZhzPW3b6n4BhZDuLQ4o+DYAAAAASUVORK5CYII=" alt="" class="picture__img"></li>
-       </ul>
+        <div class="picture__boxes">
+        <ul class="picture__wraps">
+            <li class="picture__li">
+                <div class="picture__wrap">
+                    <img src="/Ice-Creams/assets/womantell-05dcff76.png" alt="">
+                   </div>
+                   <div class="picture__item">
+                    <p class="picture__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                   </div>
+                   <ul class="picture__list">
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAECAYAAADvRz3UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABeSURBVHgBrYxBDYBQDEO7KSDBAC64YQUNOAAHWMAKN1xggOQbgNJMwQ7rYVnTvGdXP80vsBvQHFjH5zyQSBXnn45Kp22gBiRTxTkZJaK/ZUVVnJtxAXGHxLhlRVXcD2I5Qm/4ue6wAAAAAElFTkSuQmCC" alt="" class="picture__img"></li>
+                    <li><p class="picture__caption">Emily, Los Angeles</p></li>
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAAAMCAYAAAAu5pADAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqSURBVHgB5ZZRTsJAEIZnt5rwwEOjF2ifCIkhcAJLvICeQDkBegRvoCewR9ALYD1BiZoQntwDqOGJF+2OM0hJkQZ3k6198Es2gcls/8m/2+kIKCH1o2DXk/cg4PbgdXQBFZOmqd9sNoeIGPFahsda6+t2ux1DRZjqio2NS4MQIPiOYPKZ4UlvlsygAiaTSSAlHchKbwNFRfepaAU16a6ZRAZ1d7zFRr8YpyT1kek+GaXAMdPp9GVLoTlqPp/3CGcHZaMr83/P+9FpmUEM3yq+XXzLwCF0mmfwe6FM0Gg0zsERtroLk572oiGCjKHEoBw2ikyktziKwBF03YemuZ7nHYIjbHXl4/7RMQh5ZbjH96S4AXd0TRMLjfXPdWWWZQmCHnDfMdiSZBr78M+Q/NXqvCXxWhRxjAgxL3rP1pqly+YthEgs0sfgCFtdWRbVIO4676MBL3qis+J+Qrf4wTSXZxdwhK2uhBqhLwf3QmWQqlwOlba6tZoUhuGMBzbYXrBa5tSmuzKJunih9+jCb6xk0s7hibbVaoVU0AAKfYf7BsUueZhzPW3b6n4BhZDuLQ4o+DYAAAAASUVORK5CYII=" alt="" class="picture__img"></li>
+                   </ul>
+            </li>
+            <li class="picture__li">
+                <div class="picture__wrap">
+                    <img src="/Ice-Creams/assets/testimonials-9b910dbd.png" alt="">
+                   </div>
+                   <div class="picture__item">
+                    <p class="picture__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                   </div>
+                   <ul class="picture__list">
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAECAYAAADvRz3UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABeSURBVHgBrYxBDYBQDEO7KSDBAC64YQUNOAAHWMAKN1xggOQbgNJMwQ7rYVnTvGdXP80vsBvQHFjH5zyQSBXnn45Kp22gBiRTxTkZJaK/ZUVVnJtxAXGHxLhlRVXcD2I5Qm/4ue6wAAAAAElFTkSuQmCC" alt="" class="picture__img"></li>
+                    <li><p class="picture__caption">Emily, Los Angeles</p></li>
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAAAMCAYAAAAu5pADAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqSURBVHgB5ZZRTsJAEIZnt5rwwEOjF2ifCIkhcAJLvICeQDkBegRvoCewR9ALYD1BiZoQntwDqOGJF+2OM0hJkQZ3k6198Es2gcls/8m/2+kIKCH1o2DXk/cg4PbgdXQBFZOmqd9sNoeIGPFahsda6+t2ux1DRZjqio2NS4MQIPiOYPKZ4UlvlsygAiaTSSAlHchKbwNFRfepaAU16a6ZRAZ1d7zFRr8YpyT1kek+GaXAMdPp9GVLoTlqPp/3CGcHZaMr83/P+9FpmUEM3yq+XXzLwCF0mmfwe6FM0Gg0zsERtroLk572oiGCjKHEoBw2ikyktziKwBF03YemuZ7nHYIjbHXl4/7RMQh5ZbjH96S4AXd0TRMLjfXPdWWWZQmCHnDfMdiSZBr78M+Q/NXqvCXxWhRxjAgxL3rP1pqly+YthEgs0sfgCFtdWRbVIO4676MBL3qis+J+Qrf4wTSXZxdwhK2uhBqhLwf3QmWQqlwOlba6tZoUhuGMBzbYXrBa5tSmuzKJunih9+jCb6xk0s7hibbVaoVU0AAKfYf7BsUueZhzPW3b6n4BhZDuLQ4o+DYAAAAASUVORK5CYII=" alt="" class="picture__img"></li>
+                   </ul>
+            </li>
+            <li class="picture__li">
+                <div class="picture__wrap">
+                    <img src="/Ice-Creams/assets/womansblack-90d899cc.png" alt="">
+                   </div>
+                   <div class="picture__item">
+                    <p class="picture__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                   </div>
+                   <ul class="picture__list">
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAECAYAAADvRz3UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABeSURBVHgBrYxBDYBQDEO7KSDBAC64YQUNOAAHWMAKN1xggOQbgNJMwQ7rYVnTvGdXP80vsBvQHFjH5zyQSBXnn45Kp22gBiRTxTkZJaK/ZUVVnJtxAXGHxLhlRVXcD2I5Qm/4ue6wAAAAAElFTkSuQmCC" alt="" class="picture__img"></li>
+                    <li><p class="picture__caption">Emily, Los Angeles</p></li>
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAAAMCAYAAAAu5pADAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqSURBVHgB5ZZRTsJAEIZnt5rwwEOjF2ifCIkhcAJLvICeQDkBegRvoCewR9ALYD1BiZoQntwDqOGJF+2OM0hJkQZ3k6198Es2gcls/8m/2+kIKCH1o2DXk/cg4PbgdXQBFZOmqd9sNoeIGPFahsda6+t2ux1DRZjqio2NS4MQIPiOYPKZ4UlvlsygAiaTSSAlHchKbwNFRfepaAU16a6ZRAZ1d7zFRr8YpyT1kek+GaXAMdPp9GVLoTlqPp/3CGcHZaMr83/P+9FpmUEM3yq+XXzLwCF0mmfwe6FM0Gg0zsERtroLk572oiGCjKHEoBw2ikyktziKwBF03YemuZ7nHYIjbHXl4/7RMQh5ZbjH96S4AXd0TRMLjfXPdWWWZQmCHnDfMdiSZBr78M+Q/NXqvCXxWhRxjAgxL3rP1pqly+YthEgs0sfgCFtdWRbVIO4676MBL3qis+J+Qrf4wTSXZxdwhK2uhBqhLwf3QmWQqlwOlba6tZoUhuGMBzbYXrBa5tSmuzKJunih9+jCb6xk0s7hibbVaoVU0AAKfYf7BsUueZhzPW3b6n4BhZDuLQ4o+DYAAAAASUVORK5CYII=" alt="" class="picture__img"></li>
+                   </ul>
+            </li>
+        </ul>
+    </div>
     </div>
 </section>
     <section class="city">
@@ -312,13 +348,13 @@
         <div class="city__buttons">
             <ul class="city__btnlist">
                 <li class="city__button">
-                    <button type="button" href="" class="city__btnlink" data-modal-map-open>Our Locations
+                    <button type="button" href="" class="city__btnlink" data-modal-map-open>Our Locations >
                         <svg class="city__svg" width="8" height="10">
                             <use href="./images/svg/project-sprite.svg#arrow-button"></use>
                         </svg></button>
                 </li>
                 <li class="city__btns">
-                    <button type="button" href="" class="city__btnlinks" data-modal-formss-open>Franchise
+                    <button type="button" href="" class="city__btnlinks" data-modal-formss-open>Franchise >
                         <svg class="city__svgs" width="8" height="10">
                             <use href="./images/svg/project-sprite.svg#arrow-button"></use>
                         </svg></button>
