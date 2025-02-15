@@ -4,7 +4,7 @@
     background: #FFF5F6;
 
 
-    background-image: url(../../img/sectionbg1.png);
+    background-image: url(../img/sectionbg1.png);
     background-repeat: no-repeat;
     background-position: center calc(100% - 250px);
     background-size: 100%;
@@ -54,35 +54,44 @@
         }
     }
 
-
-   &__subtitle {
-    color: #D41443;
-text-align: center;
-font-family: "Titan One";
-font-size: 34px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 1.36px;
-text-transform: uppercase;
-
-
-
-
-
-@media screen and (min-width: 768px) {
-    font-size: 48px; 
-    letter-spacing: 1.92px;
-
-}
-
-@media screen and (min-width: 1280px) {
-    font-size: 58px;
-    letter-spacing: 3.48px;
+    &__subtitle {
+        color: #D41443;
+        text-align: center;
+        font-family: "Titan One";
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.36px;
+        text-transform: uppercase;
+        animation: letterSpacingAnimation 5s ease-in-out infinite; /* Анимация изменения letter-spacing */
 
     
-}
-}
+        @media screen and (min-width: 768px) {
+            font-size: 48px; 
+            letter-spacing: 1.92px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            font-size: 58px;
+            letter-spacing: 3.48px;
+        }
+    }
+    
+    @keyframes letterSpacingAnimation {
+        0% {
+            letter-spacing: 1.36px;
+        }
+        50% {
+            letter-spacing: 4px; /* Увеличиваем расстояние между буквами */
+        }
+        100% {
+            letter-spacing: 1.36px;
+        }
+    }
+
+
+    
     
 
 
@@ -119,28 +128,36 @@ align-items: center;
    }
 
 
-   &__img{
-
+   &__img {
     width: 280px;
     height: 279px;
-
-
-
+    animation: colorShift 4s ease-in-out infinite;
 
     @media screen and (min-width: 768px) {
         width: 340px;
-height: 339px;
-margin-top: 50px;
+        height: 339px;
+        margin-top: 50px;
     }
-    
+
     @media screen and (min-width: 1280px) {
         width: 516px;
         height: 516px;
-
         margin-top: 0;
-        
     }
-   }
+}
+
+@keyframes colorShift {
+    0% {
+        filter: hue-rotate(0deg) brightness(1); /* Исходное состояние (розовые оттенки) */
+    }
+    50% {
+        filter: hue-rotate(30deg) brightness(1.2); /* Легкие розовые и немного теплых оттенков */
+    }
+    100% {
+        filter: hue-rotate(0deg) brightness(1); /* Немного более яркий розовый оттенок */
+    }
+}
+
 
 
    &__wrapper {
@@ -263,22 +280,45 @@ width: 235px;
 }
 
 
-   &__btn {
+&__btn {
     color: #D41443;
-text-align: center;
-font-family: "DM Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-padding-left: 46px;
-padding-right: 34px;
-padding-top: 19px;
-padding-bottom: 17px;
-border-radius: 22px;
-background: #FFF;
-border: none;
-   }
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 46px;
+    padding-right: 34px;
+    padding-top: 19px;
+    padding-bottom: 17px;
+    border-radius: 22px;
+    background: #FFF;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease; /* Плавный переход для всех изменений */
+
+    &:hover {
+        background-color: #D41443; /* Цвет фона при ховере */
+        color: #FFF; /* Изменение цвета текста */
+        box-shadow: 0 0 15px rgba(212, 20, 67, 0.7); /* Тень при ховере */
+    }
+
+    animation: shadowAnimation 3s ease-in-out infinite; /* Анимация тени */
+
+    @keyframes shadowAnimation {
+        0% {
+            box-shadow: 0 0 5px rgba(212, 20, 67, 0.3);
+        }
+        50% {
+            box-shadow: 0 0 15px rgba(212, 20, 67, 0.6);
+        }
+        100% {
+            box-shadow: 0 0 5px rgba(212, 20, 67, 0.3);
+        }
+    }
+}
 
 
 

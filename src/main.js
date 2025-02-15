@@ -254,3 +254,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+// Получаем элемент кнопки
+// Получаем элемент кнопки
+const button = document.getElementById("buttons");
+
+// Функция для контроля появления кнопки
+function checkScroll() {
+    const heroHeight = document.querySelector(".hero").offsetHeight;
+
+    if (window.scrollY > heroHeight) {
+        button.style.opacity = "1";
+        button.style.visibility = "visible";
+    } else {
+        button.style.opacity = "0";
+        button.style.visibility = "hidden";
+    }
+}
+
+// Слушаем событие прокрутки
+window.addEventListener("scroll", checkScroll);
+
+// Запускаем проверку сразу при загрузке страницы
+checkScroll();

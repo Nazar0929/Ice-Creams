@@ -2,6 +2,45 @@
 
     padding-bottom: 132px;
 
+
+
+    &__boxes {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        width: 280px;
+
+        @media screen and (min-width: 768px) {
+            width: 620px;
+        }
+        
+        @media screen and (min-width: 1280px) {
+            width: 926px;
+        }
+    }
+
+
+    
+
+    &__wraps {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: none; /* Приховати скролбар для Firefox */
+        gap: 40px;
+    }
+
+
+    &__wraps::-webkit-scrollbar { 
+        display: none;
+    }
+
+    
+
     &__wrap {
         display: flex;
         justify-content: center;
@@ -36,6 +75,7 @@
         background-repeat: no-repeat;
         margin-bottom: 30px;
 
+        
 
         @media screen and (min-width: 768px) {
             width: 620px;
