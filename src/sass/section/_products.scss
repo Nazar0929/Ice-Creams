@@ -1,10 +1,21 @@
 .products {
     padding-top: 127px;
-
-
-
-
     padding-bottom: 119px;
+    animation: changeBackground 4s ease-in-out infinite;
+    background-color: #FFF;
+
+
+    @keyframes changeBackground {
+      0% {
+          background-color: #FFF;
+      }
+      50% {
+          background-color: #ffb8ca61;  // Серый цвет
+      }
+      100% {
+          background-color: #FFF;
+      }
+  }
 
     &__text {
         color: #FFA5BA;
@@ -27,24 +38,38 @@
     }
 
     &__caption {
-        color: #D41443;
-        text-align: center;
-        font-family: "Titan One";
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 3.48px;
-        text-transform: uppercase;
-
-        @media screen and (min-width: 768px) {
-            font-size: 48px;
-          }
-
-          @media screen and (min-width: 1280px) {
-            font-size: 58px;
-          }
-    }
+      color: #D41443;
+      text-align: center;
+      font-family: "Titan One";
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 3.48px;
+      text-transform: uppercase;
+      animation: increaseFontSize 2s ease-in-out infinite;
+  
+      @media screen and (min-width: 768px) {
+          font-size: 48px;
+      }
+  
+      @media screen and (min-width: 1280px) {
+          font-size: 58px;
+      }
+  }
+  
+  @keyframes increaseFontSize {
+      0% {
+          transform: scale(1);
+      }
+      50% {
+          transform: scale(1.07);
+      }
+      100% {
+          transform: scale(1);
+      }
+  }
+  
 
 
     &__list {
@@ -65,38 +90,55 @@
     }
 
     &__item {
-
-        padding-bottom: 50px;
-        flex-shrink: 0;
-        border-radius: 24px;
-        background: #FFB8CA;
-        margin-top: 130px;
-        position: relative;
-        padding-top: 163px;
-        width: 100%;
-        
-
-
-
-        @media screen and (min-width: 768px) {
-            padding-left: 11px;
-            padding-right: 11px;
-            padding-bottom: 40px;
-            padding-top: 152px;
-            margin-top: 152px;
-            width: 220px;
-          }
-
-          @media screen and (min-width: 1280px) {
-            padding-left: 44px;
-            padding-right: 44px;
-            padding-bottom: 50px;
-            padding-top: 163px;
-            margin-top: 259px;
-            width: 330px;
-          }
-
-    }
+      padding-bottom: 50px;
+      flex-shrink: 0;
+      border-radius: 24px;
+      background: #FFB8CA;
+      margin-top: 130px;
+      position: relative;
+      padding-top: 163px;
+      width: 100%;
+      animation: waveAnimation 1.5s ease-in-out infinite;
+  
+      @media screen and (min-width: 768px) {
+          padding-left: 11px;
+          padding-right: 11px;
+          padding-bottom: 40px;
+          padding-top: 152px;
+          margin-top: 152px;
+          width: 220px;
+      }
+  
+      @media screen and (min-width: 1280px) {
+          padding-left: 44px;
+          padding-right: 44px;
+          padding-bottom: 50px;
+          padding-top: 163px;
+          margin-top: 259px;
+          width: 330px;
+      }
+  
+      &:nth-child(2) {
+          animation-delay: 0.3s; /* Задержка для второго элемента */
+      }
+  
+      &:nth-child(3) {
+          animation-delay: 0.6s; /* Задержка для третьего элемента */
+      }
+  }
+  
+  @keyframes waveAnimation {
+      0% {
+          transform: translateY(0);
+      }
+      50% {
+          transform: translateY(-5px); /* Элемент поднимается вверх */
+      }
+      100% {
+          transform: translateY(0); /* Элемент возвращается в исходное положение */
+      }
+  }
+  
 
     &__item:nth-child(2) {
         background: #F0D1A5;

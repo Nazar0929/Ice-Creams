@@ -38,9 +38,19 @@
 
 
     &__images {
-        width: 200px;
-        height: 50px;
-    }
+      width: 200px;
+      height: 50px;
+      animation: pulseScale 1.5s infinite alternate ease-in-out;
+  }
+  
+  @keyframes pulseScale {
+      0% {
+          transform: scale(1);
+      }
+      100% {
+          transform: scale(1.1);
+      }
+  }
 
     &__list {
         display: none;
@@ -57,14 +67,34 @@
         }
 
     }
-
     &__item {
-        color: #FFF;
-        font-family: "DM Sans";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+      color: #FFF;
+      font-family: "DM Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      transition: transform 0.3s ease-in-out;
+      animation: gentleSwing 1s ease-in-out infinite alternate;
+  }
+
+  &__item:hover {
+    color: #D41443;
+  }
+  
+  
+  @keyframes gentleSwing {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(2deg);
+      }
+  }
+  
+
+    &__item:first-child {
+      color: #D41443;
     }
 
 
@@ -122,6 +152,23 @@
         background: #FFF;
         border: none;
         cursor: pointer;
+        transition: background-color 0.4s ease, color 0.4s ease;
+        animation: shadowPulse 1.5s infinite alternate;
+    }
+
+    @keyframes shadowPulse {
+      0% {
+          box-shadow: 0 0 0px rgba(212, 20, 67, 0);
+      }
+      100% {
+          box-shadow: 0 0 15px rgba(212, 20, 67, 0.6);
+      }
+    }
+
+    &__btns:hover,
+    &__btns:focus {
+      background-color: #D41443;
+      color: #FFF;
     }
 
     &__buttons {
@@ -157,14 +204,7 @@
       border-bottom: 2px solid #E18298;
     }
 
-    &__link{
-      color: #D41443;
-      font-family: "DM Sans";
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-    }
+
 
     &__link {
       color: #FFF;
@@ -252,9 +292,7 @@
 }
 
 
-.menu.is-hidden {
-  
-}
+
 
 
 .is-hidden {
@@ -278,15 +316,7 @@
 
 
 }
-.menu__btn:hover {
-  .menu__close {
 
-  }
-
-
-
-
-}
 .menu__list {
   display: flex;
   flex-direction: column;
@@ -299,9 +329,7 @@
     letter-spacing: 0.8px;
     line-height: 1.17;
 }
-.menu__link:hover {
 
-}
 
 .ssw {
   position: absolute;
@@ -409,4 +437,56 @@ margin-bottom: 64px;
       &:focus {
           transform: scale(1.1);
       }
+
+
   }
+
+
+  #buttons.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E17992;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    transform: rotate(1turn);
+    font-size: 28px; /* Размер стрелки */
+    color: #FFF;    /* Цвет стрелки */
+    line-height: 50px; /* Центрирование стрелки по вертикали */
+
+    @media screen and (min-width: 768px) {
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      font-size: 40px; 
+    }
+  
+    @media screen and (min-width: 1280px) {
+
+    }
+  
+}
+
+
+#buttons:hover {
+    background-color: #D16C84; /* Цвет фона при наведении */
+}
+
+#buttons:focus {
+    outline: none; /* Убираем обводку при фокусе */
+}
