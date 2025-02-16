@@ -23,9 +23,17 @@
         justify-content: center;
     }
 
+    &__button {
+        border: none;
+        padding: 0px;
+        cursor: pointer;
+    }
+
     &__img {
         width: 100%;
         height: 100%;
+        border: none;
+
 
         @media screen and (min-width: 768px) {
             width: 786px;
