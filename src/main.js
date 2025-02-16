@@ -276,3 +276,93 @@ window.addEventListener("scroll", checkScroll);
 
 // Запускаем проверку сразу при загрузке страницы
 checkScroll();
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const openModalBtn = document.querySelector("[data-modal-photos-open]");
+    const closeModalBtn = document.querySelector("[data-modal-photos-close]");
+    const modalMilk = document.querySelector("[data-modal-photos]");
+
+    if (openModalBtn && closeModalBtn && modalMilk) {
+        openModalBtn.addEventListener("click", () => {
+            modalMilk.classList.remove("is-hidden");
+        });
+
+        closeModalBtn.addEventListener("click", () => {
+            modalMilk.classList.add("is-hidden");
+        });
+
+        modalMilk.addEventListener("click", (event) => {
+            if (event.target === modalMilk) {
+                modalMilk.classList.add("is-hidden");
+            }
+        });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollContainer = document.querySelector(".backdrop__listsscrolr");
+    const images = document.querySelectorAll(".backdrop__sccrolsphot");
+    const circles = document.querySelectorAll(".backdrop__circle");
+
+    // Функция для активации точки
+    function activateCircle(index) {
+        circles.forEach(circle => circle.classList.remove("active"));
+        circles[index].classList.add("active");
+    }
+
+    // Функция для центрирования картинки
+    function centerImage(index) {
+        const img = images[index];
+        const containerWidth = scrollContainer.offsetWidth;
+        const imgWidth = img.offsetWidth;
+        
+        const scrollX = img.offsetLeft - scrollContainer.offsetLeft - (containerWidth / 2) + (imgWidth / 2);
+        scrollContainer.scrollTo({ left: scrollX, behavior: "smooth" });
+
+        activateCircle(index);
+    }
+
+    // Привязываем кнопки к соответствующим картинкам
+    circles.forEach((circle, index) => {
+        circle.addEventListener("click", () => centerImage(index));
+    });
+
+    // Обработчик клика на картинку (она становится активной)
+    images.forEach((img, index) => {
+        img.addEventListener("click", () => centerImage(index));
+    });
+
+    // Обработчик прокрутки вручную (колесиком мыши или пальцем)
+    scrollContainer.addEventListener("scroll", () => {
+        let minDiff = Infinity;
+        let activeIndex = 0;
+
+        images.forEach((img, index) => {
+            const imgCenter = img.offsetLeft + img.offsetWidth / 2;
+            const containerCenter = scrollContainer.scrollLeft + scrollContainer.offsetWidth / 2;
+            const diff = Math.abs(imgCenter - containerCenter);
+
+            if (diff < minDiff) {
+                minDiff = diff;
+                activeIndex = index;
+            }
+        });
+
+        activateCircle(activeIndex);
+    });
+
+    // Инициализация: первая картинка по центру
+    centerImage(0);
+});
+
+
+
+
+
+

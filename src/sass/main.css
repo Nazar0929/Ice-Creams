@@ -1559,9 +1559,15 @@ html {
   align-items: center;
   justify-content: center;
 }
+.tell__button {
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+}
 .tell__img {
   width: 100%;
   height: 100%;
+  border: none;
 }
 @media screen and (min-width: 768px) {
   .tell__img {
@@ -3851,4 +3857,178 @@ html {
 }
 .backdrop__checkbox input[type=checkbox]:checked::after {
   transform: translate(-50%, -50%) scale(1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.6);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(255, 184, 202, 0.486);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop__modalsekds {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%) scale(1);
+  position: relative;
+  padding-top: 25px;
+  width: 300px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 40px;
+  border: 5px solid #FFB8CA;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  height: 300px;
+}
+@media screen and (min-width: 768px) {
+  .backdrop__modalsekds {
+    width: 400px;
+    height: 400px;
+    padding-top: 45px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .backdrop__modalsekds {
+    width: 500px;
+    height: 500px;
+  }
+}
+.backdrop__closee {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  outline: 1px solid grey;
+  transition-property: fill, outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #FFB8CA;
+}
+.backdrop__closee:hover, .backdrop__closee:focus {
+  border: none;
+}
+.backdrop__closee:hover .backdrop__imgss, .backdrop__closee:focus .backdrop__imgss {
+  transform: rotate(180deg);
+}
+.backdrop__closee:hover {
+  background-color: #c7133e;
+  outline: none;
+  box-shadow: 0 0px 30px rgba(199, 19, 61, 0.977);
+}
+.backdrop__imgss {
+  width: 14px;
+  transition: transform 0.4s ease;
+}
+.backdrop__boxex {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%; /* Вместо 490px */
+  margin-left: auto;
+  margin-right: auto;
+}
+.backdrop__listsscrolr {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto; /* Автопрокрутка */
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-left: 50px;
+  padding-right: 50px;
+  gap: 120px; /* Сделаем поменьше */
+}
+@media screen and (min-width: 768px) {
+  .backdrop__listsscrolr {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .backdrop__listsscrolr {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+.backdrop__sccrolsphot {
+  width: 190px;
+  height: 190px;
+  border: 5px solid #ffb8ca;
+  border-radius: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .backdrop__sccrolsphot {
+    width: 265px;
+    height: 265px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .backdrop__sccrolsphot {
+    width: 310px;
+    height: 310px;
+  }
+}
+.backdrop__control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #ffb8ca;
+  width: 100%;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .backdrop__control {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .backdrop__control {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 50px;
+  }
+}
+.backdrop__circle {
+  width: 8px;
+  border: none;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+.backdrop .backdrop__circle.active {
+  background-color: #c7133e;
 }/*# sourceMappingURL=main.css.map */
