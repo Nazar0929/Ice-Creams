@@ -2,17 +2,28 @@
 
     padding-top: 100px;
     padding-bottom: 100px;
-
     background: #FFB8CA;
-    background-image: url(../img/mobileice.png), url(../img/circlepink.png);
-
     background-position-x: calc(50% + 20px), calc(50% + 30px) ;
     background-repeat: no-repeat;
     background-position-y:  0px;
     background-size: 171px 410px, 346px 344px;
 
+
+    background-image: url(../img/cream-mobile@1x.webp), url(../img/circlepink.png);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../img/cream-mobile@2x.webp), url(../img/circlepink.png);
+    }
+    
+
     @media screen and (min-width: 768px) {
-        background-image: url(../img/icesmall.png), url(../img/circlepink.png);
+        background-image: url(../img/cream-tablet@1x.webp), url(../img/circlepink.png);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../img/cream-tablet@2x.webp), url(../img/circlepink.png);
+        }
         background-size: 143px 336px, 324px 322px;
         background-position-x: calc(50% + 75px), calc(50% + 90px) ;
         padding-top: 14px;
@@ -22,7 +33,12 @@
     }
 
     @media screen and (min-width: 1280px) {
-        background-image: url(../img/icecreamlaptop.png), url(../img/elipse.png);
+        background-image: url(../img/cream-desktop@1x.webp), url(../img/circlepink.png);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../img/cream-desktop@2x.webp), url(../img/circlepink.png);
+        }
         background-size: 236px 557px, 538px 538px;
         background-position-x: calc(50% + 75px), calc(50% + 100px) ;
         padding-top: 63px;
@@ -437,16 +453,16 @@
     
     @keyframes scaleAndFade {
         0% {
-            opacity: 0.8;
-            transform: scale(1);
+
+            transform: translateX(0px);
         }
         50% {
-            opacity: 1;
+            transform: translateX(7px);
 
         }
         100% {
-            opacity: 0.8;
-            transform: scale(1);
+
+            transform: translateX(0px);
         }
     }
     

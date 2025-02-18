@@ -1,6 +1,11 @@
 <header class="header" id="buttonss">
     <div class="container header_box">
-    <a href=""><img src="./img/logoicecream.png" alt="" class="header__images"></a>
+    <a href="">
+        <picture>
+            <source srcset="./img/icecream-desktop@1x.webp 1x, ./img/icecream-desktop@2x.webp 2x" media="(min-width: 280px)" aria-label="cream">
+            <img src="./img/logoicecream.png" alt="icecream" class="header__images">
+        </picture>
+    </a>
     <nav class="header__nav">
         <ul class="header__list">
             <li class="header__item">Home</li>
@@ -10,8 +15,11 @@
             <li class="header__item">Contact</li>
         </ul>
     </nav>
-    <button type="button" class="header__button" data-modal-header-open>
-        <img src="./img/burgertime.png" alt="">
+    <button type="button" class="header__button" data-modal-header-open aria-label="burger">
+        <picture>
+            <source srcset="./img/burger-tablet@1x.webp 1x, ./img/burger-tablet@2x.webp 2x" media="(min-width: 280px)">
+            <img src="./img/burgertime.png" alt="burgers">
+        </picture>
       </button>
           <div class="header__wraps">
             <button type="button" class="header__btns" data-modal-open>Buy now ></button>
