@@ -35,6 +35,17 @@
 
 
     <script type="module" src="/main.js"></script>
+    <script>
+      if (!localStorage.getItem('cookies_accepted')) {
+          document.getElementById('cookie-banner').style.display = 'block';
+      }
+  
+      document.getElementById('accept-cookies').addEventListener('click', function() {
+          localStorage.setItem('cookies_accepted', 'true');
+          document.getElementById('cookie-banner').style.display = 'none';
+      });
+  </script>
+  
 
   </body>
 </html>
