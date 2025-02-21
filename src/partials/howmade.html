@@ -4,7 +4,12 @@
     <h3 class="milk__subtitle">how it’s made?</h3>
     <div class="milk__wrap">
     <div class="milk__wrapej">
-    <img src="./images/corova.png" alt="" class="milk__img">
+        <picture>
+            <source srcset="./img/cow-desktop@1x.webp 1x, ./img/cow-desktop@2x.webp 2x" media="(min-width: 1280px)">
+            <source srcset="./img/cow-tablet@1x.webp 1x, ./img/cow-tablet@2x.webp 2x" media="(min-width: 768px)">
+            <source srcset="./img/cow-mobile@1x.webp 1x, ./img/cow-mobile@2x.webp 2x" media="(max-width: 767px)">
+            <img src="./images/corova.png" alt="" class="milk__img">
+        </picture>
     </div>
     <ul class="milk__wrapper">
         <li class="milk__item"><p class="milk__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p></li>

@@ -3,7 +3,12 @@
     <div class="container ">
         <div class="tell__wrap">
             <button type="button" data-modal-photos-open class="tell__button" aria-label="photos">
-                <img src="./images/desctopminipikter.png" alt="describ" class="tell__img">
+                <picture>
+                    <source srcset="./img/colage-desktop@1x.webp 1x, ./img/colage-desktop@2x.webp 2x" media="(min-width: 1280px)">
+                    <source srcset="./img/colage-tablet@1x.webp 1x, ./img/colage-tablet@2x.webp 2x" media="(min-width: 768px)">
+                    <source srcset="./img/colage-mobile@1x.webp 1x, ./img/colage-mobile@2x.webp 2x" media="(max-width: 767px)">
+                    <img src="./images/desctopminipikter.png" alt="describ" class="tell__img">
+                </picture>
             </button>
         </div>
     </div>

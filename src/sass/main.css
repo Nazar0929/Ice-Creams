@@ -442,8 +442,8 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #E17992;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   border-radius: 10px;
   position: fixed;
@@ -1649,7 +1649,7 @@ html {
   padding-bottom: 26px;
   background-color: rgba(236, 236, 236, 0.7490196078);
   border-radius: 10px;
-  background-image: url(../../img/scobka.png);
+  background-image: url(../img/scobka.png);
   background-position: 50px 32px;
   background-repeat: no-repeat;
   margin-bottom: 30px;
@@ -1737,7 +1737,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .city {
-    background-image: url(../../img/sectionbgpinksflow.png);
+    background-image: url(../img/sectionbgpinksflow.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
@@ -3103,17 +3103,23 @@ html {
 .backdrop__creamscolor {
   width: 150px;
   height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (min-width: 480px) {
   .backdrop__creamscolor {
-    width: 210px;
+    width: 220px;
     height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 @media screen and (min-width: 1200px) {
   .backdrop__creamscolor {
-    width: 210px;
-    height: 210px;
+    width: 220px;
+    height: 226px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 .backdrop__none {
