@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Ice-Creams/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a brief description of the page content, helping with SEO and providing context for search engines." />
     <title>Vanilla App Template</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Titan+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/Ice-Creams/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Ice-Creams/assets/index-a30bbd8c.css">
+    <link rel="stylesheet" href="/Ice-Creams/assets/index-6edf1fd8.css">
   </head>
   <body>
 
@@ -135,7 +136,12 @@
                 <p class="products__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
                 </div>
                 <div class="products__wrap">
-                <button type="button" class="products__button"  data-modal-krem-open aria-label="more"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHnSURBVHgBtZa7LwRRFMbP9U4knolGViJBUNAgUa1NqMWfIPwfOq9EJToJhQSVRMey8SgUNERohAIh1lriNbtiju+Y8WbnXrv7Jb/M7M6995tz7uOMogRi5jJcGkAAtIJaUOI+vgZ7YBME5aqUuiETwUABP1gGl5xYz26bNbdPhq6JDwyCGJtL+gzIGF4mNSAILP6/LHeM6kSRLHLqJGP5vptksJOuZCL5LknjMFCfjdr4f3OiYxZ4MykC65w+hUCZLMUmUEfpUyNoEKMOUGzSM354ShyL6zaXDR4Qo2agt8kg++6Bjrv7KDI+RwZqlTk6Z0NdTc7zflUnX47Nsm1praGzLLgVer2OtXdE0Yn5998cf6LMgnwKj0wR5WRTaW+X1xDFkjLl1SqzMP/Hf/aD5dwoz+7u2yEsNlR0euE1deHRGbYftfb4uRiF2EDPt/d84O/hMObHQCEx6mdDxQ5PdCMR2WBI5igEImSgnMpyUnm5us2jIChGO2Cb0qddsPV6x05lTNeh6n+3ZKd0D3Fqy4Tljvn11OHUFz6pshU/EslOVFLKlzhFpZw/F71fDJP9OJF0+bSWCTulXaruKoiwsxcSSdosu31+jUJ5GMqB2wLaySkn9fRRu67APtgAK2AbH5AXf431Ahc58HkDvPhiAAAAAElFTkSuQmCC" alt="modal" class="products__btn"></button>
+                <button type="button" class="products__button"  data-modal-krem-open aria-label="more">
+                    <picture>
+                        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ+SURBVHgBzZnNaxNRFMXvDG0WqRGxgaIWW6kY97bQbetW3BRt+wcoCNKd7nRhBcWVCGL9wFUXgrgQxZ26dGFcVUorCm2IVmkUQS02Qq/nzAcNtCXJ5GZmfnB4M5mZ9w53Mu/jPkcioKouiiFoBBqEjkAHoK7glj/QZ+gDVIReQ28dx9mQdgJjvdA1qKTNUwqe7RVrUGk3dBta19ZZD+rqFgtQ0WloVe1hneMSFTzcAd3R9sM2Opo1l4WeaXywrWyj5hi5pxo/bLN+JHHTjCbHTD1z45o8k7WenBpz/OwXoLwkyw/oKDr1VZ64NReuSvLmyF5oOjzxIojoHUTxEeqUdPAPOowolsIInpP0mCP0Qk/iqD/wL0P2Y2RrlKG+cFaSNnOEnoZocFSsUJWVCzfl2/R9MWKEPfcxMaK6vCI/n7yUjV9r3nnPpTPSIoOMYEGMyPTvl/7HN8TNZaVy65FFJAvsYipqzFpxXucPndD3+VH9euWetkCFrzgnEVkYOLnjNf1b9UpGkv/NnstnJQI5V+LAcSQymvJXTINzaoihOTLHV7woRlSXvsjSqYteN5OfmrDoZhb5kbyDxsSATN8+2TN2XNzdXRbmSJFj8TAO3kg6GU7/ZCFIR8xK+pilt3DCyuh9gjKSDtjLD8Bg2euoeYDigaSHh4GnLYsmdjk2OZPofIcKMMhyc9EU/HBekmcqNLctmuzC/a7UAzdlNLnUR2MfqfrJoxcaH8+10eRRjclOjed1s43oS148PKHtS2BOigWoKK9+otEqBcy67NMs6ifRr0NlbZ5y8GxTY36kubhubkNwTc1lK7ch2PCu4Jbf4g/23IbgdO6VRNyG+A/OcXRboihbLAAAAABJRU5ErkJggg== 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPNSURBVHgB7Z3LS9RRFMfPyOSiF5GChJYLo1q0q6BttQqijZhSraJ35lJqoYvqH+ghZISrwqLcRC2rZYtyVZBFgfZykUXQkzGc7rl9j/wcx3FmzjzuzJzP4nyv4wO8fLi/+f1+93cmRiUimUzWYbgNuQO5FbkB2YxclvInfiI/Il8jnyEfI59yicViM1QC6shQEaMi4YxrwfAU8gByLRWX98ibyAEuzsgPVATMQCUFM9AZ14DhOeRhZD2VlwTyOrKfizPyCxUAM1CJ2kBn3j4MB5CNFDZTyG4uzsTbpMAMVJKzgc64OIaXkcepsrmKPM3FGfmXcsAMVJK1gc68pRjKmrGHqov7yE4uzsRf2fySGahkUQMja94Ici9VN/eQ7VwWWxPNQCXZGChHqWNUWwxycQZmfJdhBipZ0EBnXieGt6i22c/FmTic7ptmoJJ5BkauqowhQz+3LTZfkZu4OBM/R79pBiqJp3ntArLWzRNWI88j5xyVzUAls2ugW/vWYfgGuYSMKNPI9VzcWviO0wxUEl0DTyDNvPTIvMg8neViBiqJRXYMTCBbyMiE3F9u5WIGKuE1UPaqmHnZIfPk580MVMIG7qQQSSZ9TPZe9Fm38v9mraa+IxQIfneZGaiEDdxCAZKYmPT5beShz5nvc2+SBWCi39doBirh94HPMd5MAfJ79KXP8Y5en2JiY0+XzzKa+IKLGaiEDZTdSg0UMAGa6PcXmoFK+Ci8gsrAWFt+GxySfxJzvp66hJuGeN/Y1H+USoSfNzNQSZyqhVjRHjjIiBmoxI7C+WNH4ULAa+AkxkEaGPCZiJ83M1AJG/gK46DOhRPjn3wGaJ7g580MVMIGjmLcTgFR37rG56r2XT4DvCLtn1M2A5Xw+8DtGD8hIxf8vJmBSmxnQu7YzoRCEpfuFs7EG3jtDBmZ8PMk82YGKonuUJW17y2y3L0OQkMuhbdxkS4gZqCS2SvSMqPOROlucZKMKENcUvvPmIFKMj2pJFdpgr5SXQKkv8xGLqn9ZsxAJfPuyskMOxO78dIw1TY9XBbqdGQGKrEn1hfmGhdnXsb/2wxUko2BckZyB1krXTs6uDgDE5l+2AxUkk/norvI3VRdPED6bnTWuahE5NO9TZ5alO5tlX50HkRK97bpHH7XDNRSiA6WXRiKkZXSwVLOMFRnWmagkkJ28RXzpLvFIWQoXXyHkH1cnHlTVADMQCWl6GQuV3UOIpupuEivfbnLeIWLdTIPlJJtbU/zaQ7ynLI8LSqf5iDmLk/5Ez+QYpJ8moPsLnuEtE9zqCT+AexVCL6+KF6KAAAAAElFTkSuQmCC 2x" media="(min-width: 280px)">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHnSURBVHgBtZa7LwRRFMbP9U4knolGViJBUNAgUa1NqMWfIPwfOq9EJToJhQSVRMey8SgUNERohAIh1lriNbtiju+Y8WbnXrv7Jb/M7M6995tz7uOMogRi5jJcGkAAtIJaUOI+vgZ7YBME5aqUuiETwUABP1gGl5xYz26bNbdPhq6JDwyCGJtL+gzIGF4mNSAILP6/LHeM6kSRLHLqJGP5vptksJOuZCL5LknjMFCfjdr4f3OiYxZ4MykC65w+hUCZLMUmUEfpUyNoEKMOUGzSM354ShyL6zaXDR4Qo2agt8kg++6Bjrv7KDI+RwZqlTk6Z0NdTc7zflUnX47Nsm1praGzLLgVer2OtXdE0Yn5998cf6LMgnwKj0wR5WRTaW+X1xDFkjLl1SqzMP/Hf/aD5dwoz+7u2yEsNlR0euE1deHRGbYftfb4uRiF2EDPt/d84O/hMObHQCEx6mdDxQ5PdCMR2WBI5igEImSgnMpyUnm5us2jIChGO2Cb0qddsPV6x05lTNeh6n+3ZKd0D3Fqy4Tljvn11OHUFz6pshU/EslOVFLKlzhFpZw/F71fDJP9OJF0+bSWCTulXaruKoiwsxcSSdosu31+jUJ5GMqB2wLaySkn9fRRu67APtgAK2AbH5AXf431Ahc58HkDvPhiAAAAAElFTkSuQmCC" alt="modal" class="products__btn">
+                    </picture>
+                </button>
                 </div>
             </li>
             <li class="products__item">
@@ -147,7 +153,12 @@
                 <p class="products__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
                 </div>
                 <div class="products__wrap">
-                <button type="button" class="products__button"  data-modal-krem-open aria-label="mores"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHnSURBVHgBtZa7LwRRFMbP9U4knolGViJBUNAgUa1NqMWfIPwfOq9EJToJhQSVRMey8SgUNERohAIh1lriNbtiju+Y8WbnXrv7Jb/M7M6995tz7uOMogRi5jJcGkAAtIJaUOI+vgZ7YBME5aqUuiETwUABP1gGl5xYz26bNbdPhq6JDwyCGJtL+gzIGF4mNSAILP6/LHeM6kSRLHLqJGP5vptksJOuZCL5LknjMFCfjdr4f3OiYxZ4MykC65w+hUCZLMUmUEfpUyNoEKMOUGzSM354ShyL6zaXDR4Qo2agt8kg++6Bjrv7KDI+RwZqlTk6Z0NdTc7zflUnX47Nsm1praGzLLgVer2OtXdE0Yn5998cf6LMgnwKj0wR5WRTaW+X1xDFkjLl1SqzMP/Hf/aD5dwoz+7u2yEsNlR0euE1deHRGbYftfb4uRiF2EDPt/d84O/hMObHQCEx6mdDxQ5PdCMR2WBI5igEImSgnMpyUnm5us2jIChGO2Cb0qddsPV6x05lTNeh6n+3ZKd0D3Fqy4Tljvn11OHUFz6pshU/EslOVFLKlzhFpZw/F71fDJP9OJF0+bSWCTulXaruKoiwsxcSSdosu31+jUJ5GMqB2wLaySkn9fRRu67APtgAK2AbH5AXf431Ahc58HkDvPhiAAAAAElFTkSuQmCC" alt="icon" class="products__btn"></button>
+                <button type="button" class="products__button"  data-modal-krem-open aria-label="mores">
+                    <picture>
+                        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ+SURBVHgBzZnNaxNRFMXvDG0WqRGxgaIWW6kY97bQbetW3BRt+wcoCNKd7nRhBcWVCGL9wFUXgrgQxZ26dGFcVUorCm2IVmkUQS02Qq/nzAcNtCXJ5GZmfnB4M5mZ9w53Mu/jPkcioKouiiFoBBqEjkAHoK7glj/QZ+gDVIReQ28dx9mQdgJjvdA1qKTNUwqe7RVrUGk3dBta19ZZD+rqFgtQ0WloVe1hneMSFTzcAd3R9sM2Opo1l4WeaXywrWyj5hi5pxo/bLN+JHHTjCbHTD1z45o8k7WenBpz/OwXoLwkyw/oKDr1VZ64NReuSvLmyF5oOjzxIojoHUTxEeqUdPAPOowolsIInpP0mCP0Qk/iqD/wL0P2Y2RrlKG+cFaSNnOEnoZocFSsUJWVCzfl2/R9MWKEPfcxMaK6vCI/n7yUjV9r3nnPpTPSIoOMYEGMyPTvl/7HN8TNZaVy65FFJAvsYipqzFpxXucPndD3+VH9euWetkCFrzgnEVkYOLnjNf1b9UpGkv/NnstnJQI5V+LAcSQymvJXTINzaoihOTLHV7woRlSXvsjSqYteN5OfmrDoZhb5kbyDxsSATN8+2TN2XNzdXRbmSJFj8TAO3kg6GU7/ZCFIR8xK+pilt3DCyuh9gjKSDtjLD8Bg2euoeYDigaSHh4GnLYsmdjk2OZPofIcKMMhyc9EU/HBekmcqNLctmuzC/a7UAzdlNLnUR2MfqfrJoxcaH8+10eRRjclOjed1s43oS148PKHtS2BOigWoKK9+otEqBcy67NMs6ifRr0NlbZ5y8GxTY36kubhubkNwTc1lK7ch2PCu4Jbf4g/23IbgdO6VRNyG+A/OcXRboihbLAAAAABJRU5ErkJggg== 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPNSURBVHgB7Z3LS9RRFMfPyOSiF5GChJYLo1q0q6BttQqijZhSraJ35lJqoYvqH+ghZISrwqLcRC2rZYtyVZBFgfZykUXQkzGc7rl9j/wcx3FmzjzuzJzP4nyv4wO8fLi/+f1+93cmRiUimUzWYbgNuQO5FbkB2YxclvInfiI/Il8jnyEfI59yicViM1QC6shQEaMi4YxrwfAU8gByLRWX98ibyAEuzsgPVATMQCUFM9AZ14DhOeRhZD2VlwTyOrKfizPyCxUAM1CJ2kBn3j4MB5CNFDZTyG4uzsTbpMAMVJKzgc64OIaXkcepsrmKPM3FGfmXcsAMVJK1gc68pRjKmrGHqov7yE4uzsRf2fySGahkUQMja94Ici9VN/eQ7VwWWxPNQCXZGChHqWNUWwxycQZmfJdhBipZ0EBnXieGt6i22c/FmTic7ptmoJJ5BkauqowhQz+3LTZfkZu4OBM/R79pBiqJp3ntArLWzRNWI88j5xyVzUAls2ugW/vWYfgGuYSMKNPI9VzcWviO0wxUEl0DTyDNvPTIvMg8neViBiqJRXYMTCBbyMiE3F9u5WIGKuE1UPaqmHnZIfPk580MVMIG7qQQSSZ9TPZe9Fm38v9mraa+IxQIfneZGaiEDdxCAZKYmPT5beShz5nvc2+SBWCi39doBirh94HPMd5MAfJ79KXP8Y5en2JiY0+XzzKa+IKLGaiEDZTdSg0UMAGa6PcXmoFK+Ci8gsrAWFt+GxySfxJzvp66hJuGeN/Y1H+USoSfNzNQSZyqhVjRHjjIiBmoxI7C+WNH4ULAa+AkxkEaGPCZiJ83M1AJG/gK46DOhRPjn3wGaJ7g580MVMIGjmLcTgFR37rG56r2XT4DvCLtn1M2A5Xw+8DtGD8hIxf8vJmBSmxnQu7YzoRCEpfuFs7EG3jtDBmZ8PMk82YGKonuUJW17y2y3L0OQkMuhbdxkS4gZqCS2SvSMqPOROlucZKMKENcUvvPmIFKMj2pJFdpgr5SXQKkv8xGLqn9ZsxAJfPuyskMOxO78dIw1TY9XBbqdGQGKrEn1hfmGhdnXsb/2wxUko2BckZyB1krXTs6uDgDE5l+2AxUkk/norvI3VRdPED6bnTWuahE5NO9TZ5alO5tlX50HkRK97bpHH7XDNRSiA6WXRiKkZXSwVLOMFRnWmagkkJ28RXzpLvFIWQoXXyHkH1cnHlTVADMQCWl6GQuV3UOIpupuEivfbnLeIWLdTIPlJJtbU/zaQ7ynLI8LSqf5iDmLk/5Ez+QYpJ8moPsLnuEtE9zqCT+AexVCL6+KF6KAAAAAElFTkSuQmCC 2x" media="(min-width: 280px)">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHnSURBVHgBtZa7LwRRFMbP9U4knolGViJBUNAgUa1NqMWfIPwfOq9EJToJhQSVRMey8SgUNERohAIh1lriNbtiju+Y8WbnXrv7Jb/M7M6995tz7uOMogRi5jJcGkAAtIJaUOI+vgZ7YBME5aqUuiETwUABP1gGl5xYz26bNbdPhq6JDwyCGJtL+gzIGF4mNSAILP6/LHeM6kSRLHLqJGP5vptksJOuZCL5LknjMFCfjdr4f3OiYxZ4MykC65w+hUCZLMUmUEfpUyNoEKMOUGzSM354ShyL6zaXDR4Qo2agt8kg++6Bjrv7KDI+RwZqlTk6Z0NdTc7zflUnX47Nsm1praGzLLgVer2OtXdE0Yn5998cf6LMgnwKj0wR5WRTaW+X1xDFkjLl1SqzMP/Hf/aD5dwoz+7u2yEsNlR0euE1deHRGbYftfb4uRiF2EDPt/d84O/hMObHQCEx6mdDxQ5PdCMR2WBI5igEImSgnMpyUnm5us2jIChGO2Cb0qddsPV6x05lTNeh6n+3ZKd0D3Fqy4Tljvn11OHUFz6pshU/EslOVFLKlzhFpZw/F71fDJP9OJF0+bSWCTulXaruKoiwsxcSSdosu31+jUJ5GMqB2wLaySkn9fRRu67APtgAK2AbH5AXf431Ahc58HkDvPhiAAAAAElFTkSuQmCC" alt="modal" class="products__btn">
+                    </picture>
+                </button>
                 </div>
             </li>
             <li class="products__item">
@@ -159,7 +170,12 @@
                 <p class="products__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
                 </div>
                 <div class="products__wrap">
-                <button type="button" class="products__button"  data-modal-krem-open aria-label="moreinfo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHnSURBVHgBtZa7LwRRFMbP9U4knolGViJBUNAgUa1NqMWfIPwfOq9EJToJhQSVRMey8SgUNERohAIh1lriNbtiju+Y8WbnXrv7Jb/M7M6995tz7uOMogRi5jJcGkAAtIJaUOI+vgZ7YBME5aqUuiETwUABP1gGl5xYz26bNbdPhq6JDwyCGJtL+gzIGF4mNSAILP6/LHeM6kSRLHLqJGP5vptksJOuZCL5LknjMFCfjdr4f3OiYxZ4MykC65w+hUCZLMUmUEfpUyNoEKMOUGzSM354ShyL6zaXDR4Qo2agt8kg++6Bjrv7KDI+RwZqlTk6Z0NdTc7zflUnX47Nsm1praGzLLgVer2OtXdE0Yn5998cf6LMgnwKj0wR5WRTaW+X1xDFkjLl1SqzMP/Hf/aD5dwoz+7u2yEsNlR0euE1deHRGbYftfb4uRiF2EDPt/d84O/hMObHQCEx6mdDxQ5PdCMR2WBI5igEImSgnMpyUnm5us2jIChGO2Cb0qddsPV6x05lTNeh6n+3ZKd0D3Fqy4Tljvn11OHUFz6pshU/EslOVFLKlzhFpZw/F71fDJP9OJF0+bSWCTulXaruKoiwsxcSSdosu31+jUJ5GMqB2wLaySkn9fRRu67APtgAK2AbH5AXf431Ahc58HkDvPhiAAAAAElFTkSuQmCC" alt="buy" class="products__btn"></button>
+                <button type="button" class="products__button"  data-modal-krem-open aria-label="moreinfo">
+                    <picture>
+                        <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ+SURBVHgBzZnNaxNRFMXvDG0WqRGxgaIWW6kY97bQbetW3BRt+wcoCNKd7nRhBcWVCGL9wFUXgrgQxZ26dGFcVUorCm2IVmkUQS02Qq/nzAcNtCXJ5GZmfnB4M5mZ9w53Mu/jPkcioKouiiFoBBqEjkAHoK7glj/QZ+gDVIReQ28dx9mQdgJjvdA1qKTNUwqe7RVrUGk3dBta19ZZD+rqFgtQ0WloVe1hneMSFTzcAd3R9sM2Opo1l4WeaXywrWyj5hi5pxo/bLN+JHHTjCbHTD1z45o8k7WenBpz/OwXoLwkyw/oKDr1VZ64NReuSvLmyF5oOjzxIojoHUTxEeqUdPAPOowolsIInpP0mCP0Qk/iqD/wL0P2Y2RrlKG+cFaSNnOEnoZocFSsUJWVCzfl2/R9MWKEPfcxMaK6vCI/n7yUjV9r3nnPpTPSIoOMYEGMyPTvl/7HN8TNZaVy65FFJAvsYipqzFpxXucPndD3+VH9euWetkCFrzgnEVkYOLnjNf1b9UpGkv/NnstnJQI5V+LAcSQymvJXTINzaoihOTLHV7woRlSXvsjSqYteN5OfmrDoZhb5kbyDxsSATN8+2TN2XNzdXRbmSJFj8TAO3kg6GU7/ZCFIR8xK+pilt3DCyuh9gjKSDtjLD8Bg2euoeYDigaSHh4GnLYsmdjk2OZPofIcKMMhyc9EU/HBekmcqNLctmuzC/a7UAzdlNLnUR2MfqfrJoxcaH8+10eRRjclOjed1s43oS148PKHtS2BOigWoKK9+otEqBcy67NMs6ifRr0NlbZ5y8GxTY36kubhubkNwTc1lK7ch2PCu4Jbf4g/23IbgdO6VRNyG+A/OcXRboihbLAAAAABJRU5ErkJggg== 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPNSURBVHgB7Z3LS9RRFMfPyOSiF5GChJYLo1q0q6BttQqijZhSraJ35lJqoYvqH+ghZISrwqLcRC2rZYtyVZBFgfZykUXQkzGc7rl9j/wcx3FmzjzuzJzP4nyv4wO8fLi/+f1+93cmRiUimUzWYbgNuQO5FbkB2YxclvInfiI/Il8jnyEfI59yicViM1QC6shQEaMi4YxrwfAU8gByLRWX98ibyAEuzsgPVATMQCUFM9AZ14DhOeRhZD2VlwTyOrKfizPyCxUAM1CJ2kBn3j4MB5CNFDZTyG4uzsTbpMAMVJKzgc64OIaXkcepsrmKPM3FGfmXcsAMVJK1gc68pRjKmrGHqov7yE4uzsRf2fySGahkUQMja94Ici9VN/eQ7VwWWxPNQCXZGChHqWNUWwxycQZmfJdhBipZ0EBnXieGt6i22c/FmTic7ptmoJJ5BkauqowhQz+3LTZfkZu4OBM/R79pBiqJp3ntArLWzRNWI88j5xyVzUAls2ugW/vWYfgGuYSMKNPI9VzcWviO0wxUEl0DTyDNvPTIvMg8neViBiqJRXYMTCBbyMiE3F9u5WIGKuE1UPaqmHnZIfPk580MVMIG7qQQSSZ9TPZe9Fm38v9mraa+IxQIfneZGaiEDdxCAZKYmPT5beShz5nvc2+SBWCi39doBirh94HPMd5MAfJ79KXP8Y5en2JiY0+XzzKa+IKLGaiEDZTdSg0UMAGa6PcXmoFK+Ci8gsrAWFt+GxySfxJzvp66hJuGeN/Y1H+USoSfNzNQSZyqhVjRHjjIiBmoxI7C+WNH4ULAa+AkxkEaGPCZiJ83M1AJG/gK46DOhRPjn3wGaJ7g580MVMIGjmLcTgFR37rG56r2XT4DvCLtn1M2A5Xw+8DtGD8hIxf8vJmBSmxnQu7YzoRCEpfuFs7EG3jtDBmZ8PMk82YGKonuUJW17y2y3L0OQkMuhbdxkS4gZqCS2SvSMqPOROlucZKMKENcUvvPmIFKMj2pJFdpgr5SXQKkv8xGLqn9ZsxAJfPuyskMOxO78dIw1TY9XBbqdGQGKrEn1hfmGhdnXsb/2wxUko2BckZyB1krXTs6uDgDE5l+2AxUkk/norvI3VRdPED6bnTWuahE5NO9TZ5alO5tlX50HkRK97bpHH7XDNRSiA6WXRiKkZXSwVLOMFRnWmagkkJ28RXzpLvFIWQoXXyHkH1cnHlTVADMQCWl6GQuV3UOIpupuEivfbnLeIWLdTIPlJJtbU/zaQ7ynLI8LSqf5iDmLk/5Ez+QYpJ8moPsLnuEtE9zqCT+AexVCL6+KF6KAAAAAElFTkSuQmCC 2x" media="(min-width: 280px)">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHnSURBVHgBtZa7LwRRFMbP9U4knolGViJBUNAgUa1NqMWfIPwfOq9EJToJhQSVRMey8SgUNERohAIh1lriNbtiju+Y8WbnXrv7Jb/M7M6995tz7uOMogRi5jJcGkAAtIJaUOI+vgZ7YBME5aqUuiETwUABP1gGl5xYz26bNbdPhq6JDwyCGJtL+gzIGF4mNSAILP6/LHeM6kSRLHLqJGP5vptksJOuZCL5LknjMFCfjdr4f3OiYxZ4MykC65w+hUCZLMUmUEfpUyNoEKMOUGzSM354ShyL6zaXDR4Qo2agt8kg++6Bjrv7KDI+RwZqlTk6Z0NdTc7zflUnX47Nsm1praGzLLgVer2OtXdE0Yn5998cf6LMgnwKj0wR5WRTaW+X1xDFkjLl1SqzMP/Hf/aD5dwoz+7u2yEsNlR0euE1deHRGbYftfb4uRiF2EDPt/d84O/hMObHQCEx6mdDxQ5PdCMR2WBI5igEImSgnMpyUnm5us2jIChGO2Cb0qddsPV6x05lTNeh6n+3ZKd0D3Fqy4Tljvn11OHUFz6pshU/EslOVFLKlzhFpZw/F71fDJP9OJF0+bSWCTulXaruKoiwsxcSSdosu31+jUJ5GMqB2wLaySkn9fRRu67APtgAK2AbH5AXf431Ahc58HkDvPhiAAAAAElFTkSuQmCC" alt="modal" class="products__btn">
+                    </picture>
+                </button>
                 </div>
             </li>
         </ul>
@@ -171,7 +187,12 @@
     <h3 class="milk__subtitle">how it’s made?</h3>
     <div class="milk__wrap">
     <div class="milk__wrapej">
-    <img src="/Ice-Creams/assets/corova-8f682a5a.png" alt="" class="milk__img">
+        <picture>
+            <source srcset="/Ice-Creams/assets/cow-desktop@1x-d8281c7b.webp 1x, /Ice-Creams/assets/cow-desktop@2x-db5fb07e.webp 2x" media="(min-width: 1280px)">
+            <source srcset="/Ice-Creams/assets/cow-tablet@1x-e7715e8e.webp 1x, /Ice-Creams/assets/cow-tablet@2x-364f9151.webp 2x" media="(min-width: 768px)">
+            <source srcset="/Ice-Creams/assets/cow-mobile@1x-ac352664.webp 1x, /Ice-Creams/assets/cow-mobile@2x-ce4c1c31.webp 2x" media="(max-width: 767px)">
+            <img src="/Ice-Creams/assets/corova-8f682a5a.png" alt="" class="milk__img">
+        </picture>
     </div>
     <ul class="milk__wrapper">
         <li class="milk__item"><p class="milk__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p></li>
@@ -210,7 +231,12 @@
     <div class="container ">
         <div class="tell__wrap">
             <button type="button" data-modal-photos-open class="tell__button" aria-label="photos">
-                <img src="/Ice-Creams/assets/desctopminipikter-9cd934be.png" alt="describ" class="tell__img">
+                <picture>
+                    <source srcset="/Ice-Creams/assets/colage-desktop@1x-189fc3c3.webp 1x, /Ice-Creams/assets/colage-desktop@2x-dd2ab514.webp 2x" media="(min-width: 1280px)">
+                    <source srcset="/Ice-Creams/assets/colage-tablet@1x-7f008f2a.webp 1x, /Ice-Creams/assets/colage-tablet@2x-79368b45.webp 2x" media="(min-width: 768px)">
+                    <source srcset="/Ice-Creams/assets/colage-mobile@1x-ee8db086.webp 1x, /Ice-Creams/assets/colage-mobile@2x-7285e7da.webp 2x" media="(max-width: 767px)">
+                    <img src="/Ice-Creams/assets/desctopminipikter-9cd934be.png" alt="describ" class="tell__img">
+                </picture>
             </button>
         </div>
     </div>
@@ -323,13 +349,13 @@
                 <li class="city__button">
                     <button type="button" href="" class="city__btnlink" data-modal-map-open>Our Locations >
                         <svg class="city__svg" width="8" height="10">
-                            <use href="./images/svg/project-sprite.svg#arrow-button"></use>
+                            <use href="#"></use>
                         </svg></button>
                 </li>
                 <li class="city__btns">
                     <button type="button" href="" class="city__btnlinks" data-modal-formss-open>Franchise >
                         <svg class="city__svgs" width="8" height="10">
-                            <use href="./images/svg/project-sprite.svg#arrow-button"></use>
+                            <use href="#"></use>
                         </svg></button>
                 </li>
             </ul>
@@ -473,20 +499,20 @@
       
 
     <div class="backdrop is-hidden" data-modal-second>
-    <div class="backdrop__modals ">
+    <div class="backdrop__modals">
         <form>
             <p class="backdrop__p">Please fill out the form so that we can contact you to place an order</p>
             <label class="backdrop__labelina">
                 <span class="backdrop__s">Name</span>
-                <input type="text" id="name" name="name" placeholder="Jhon Smith" class="backdrop__pasha" required>
+                <input type="text" id="name" name="name" placeholder="Jhon Smith" class="backdrop__pasha" required autocomplete="name">
             </label>
             <label class="backdrop__labelina">
                 <span class="backdrop__s">Phone number</span>
-                <input type="text" id="phone" name="phone" placeholder="+61 (0) 383 766 284" class="backdrop__pasha" required>
+                <input type="text" id="phone" name="phone" placeholder="+61 (0) 383 766 284" class="backdrop__pasha" required autocomplete="tel">
             </label>
             <label class="backdrop__labelina">
                 <span class="backdrop__s">E-mail</span>
-                <input type="email" id="email" name="email" placeholder="E-mail" class="backdrop__pasha" required>
+                <input type="email" id="email" name="email" placeholder="E-mail" class="backdrop__pasha" required autocomplete="email">
             </label>
             <label class="backdrop__labelina">
                 <span class="backdrop__s">Comments</span>
@@ -587,15 +613,15 @@
             <p class="backdrop__p">Please fill out the form so that we can contact you to place an order</p>
             <label class="backdrop__labelina">
                 <span class="backdrop__s">Name</span>
-                <input type="text" id="name" name="name" placeholder="Jhon Smith" class="backdrop__pasha" required>
+                <input type="text" id="name" name="name" placeholder="Jhon Smith" class="backdrop__pasha" required autocomplete="name">
             </label>
             <label class="backdrop__labelina">
                 <span class="backdrop__s">Phone number</span>
-                <input type="text" id="phone" name="phone" placeholder="+61 (0) 383 766 284" class="backdrop__pasha" required>
+                <input type="text" id="phone" name="phone" placeholder="+61 (0) 383 766 284" class="backdrop__pasha" required autocomplete="tel">
             </label>
             <label class="backdrop__labelina">
                 <span class="backdrop__s">E-mail</span>
-                <input type="email" id="email" name="email" placeholder="E-mail" class="backdrop__pasha" required>
+                <input type="email" id="email" name="email" placeholder="E-mail" class="backdrop__pasha" required autocomplete="email">
             </label>
             <label class="backdrop__labelina">
                 <span class="backdrop__s">Comments</span>
@@ -656,18 +682,8 @@
   
   
 
-
     
-    <script>
-      if (!localStorage.getItem('cookies_accepted')) {
-          document.getElementById('cookie-banner').style.display = 'block';
-      }
-  
-      document.getElementById('accept-cookies').addEventListener('click', function() {
-          localStorage.setItem('cookies_accepted', 'true');
-          document.getElementById('cookie-banner').style.display = 'none';
-      });
-  </script>
+
   
 
   </body>
