@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a brief description of the page content, helping with SEO and providing context for search engines." />
     <title>Vanilla App Template</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Titan+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
@@ -33,18 +34,8 @@
     <load ="partials/forms.html" />
     <load ="partials/photscroll.html" />
 
-
     <script type="module" src="/main.js"></script>
-    <script>
-      if (!localStorage.getItem('cookies_accepted')) {
-          document.getElementById('cookie-banner').style.display = 'block';
-      }
-  
-      document.getElementById('accept-cookies').addEventListener('click', function() {
-          localStorage.setItem('cookies_accepted', 'true');
-          document.getElementById('cookie-banner').style.display = 'none';
-      });
-  </script>
+
   
 
   </body>

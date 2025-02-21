@@ -87,24 +87,24 @@
         margin-top: 15px;
         align-items: center;
     }
-
     &__creamscolor {
         width: 150px;
         height: 100%;
-
+        object-fit: contain; // This ensures the image is scaled proportionally
+    
         @media screen and (min-width: 480px) {
-            width: 210px;
+            width: 220px;
             height: 100%;
-
+            object-fit: contain;
         }
-  
-      
+    
         @media screen and (min-width: 1200px) {
-            width: 210px;
-            height: 210px;
+            width: 220px;
+            height: 226px;  // Set height directly if needed, but use 'object-fit' for the image
+            object-fit: contain;
         }
     }
-
+    
     &__none {
         width: 58px;
         height: 58px;
